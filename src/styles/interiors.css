@@ -1,0 +1,2 @@
+
+.interior-grid{display:grid;grid-template-columns:1.38fr .84fr;gap:24px;align-items:start}.interior-main img{width:100%;aspect-ratio:1.48;object-fit:cover}.interior-side img{width:100%;aspect-ratio:1.2;object-fit:cover}.interior-side{padding-top:64px}.interior-note{font-size:14px;margin-top:25px;line-height:1.75;max-width:330px}.interior-note .text-link{margin-top:20px;color:var(--text)}

@@ -1,0 +1,72 @@
+{
+  "hero-vanuatu": {
+    "src": "/media/hero-vanuatu.9adc574216.webp",
+    "width": 1806,
+    "height": 1419
+  },
+  "vanuatu-render": {
+    "src": "/media/vanuatu-render.634073d4bc.webp",
+    "width": 1035,
+    "height": 718
+  },
+  "storm-render": {
+    "src": "/media/storm-render.35ef3483e6.webp",
+    "width": 1600,
+    "height": 758
+  },
+  "family-render": {
+    "src": "/media/family-render.3aad4c1d75.webp",
+    "width": 1600,
+    "height": 808
+  },
+  "hunter-render": {
+    "src": "/media/hunter-render.b4edac926c.webp",
+    "width": 1600,
+    "height": 713
+  },
+  "hunter-patrol": {
+    "src": "/media/hunter-patrol.cdd8d6de17.webp",
+    "width": 1600,
+    "height": 922
+  },
+  "engineering-cad": {
+    "src": "/media/engineering-cad.9aaa3c1c60.webp",
+    "width": 1420,
+    "height": 942
+  },
+  "vanuatu-salon": {
+    "src": "/media/vanuatu-salon.db42fd8265.webp",
+    "width": 1585,
+    "height": 1087
+  },
+  "vanuatu-cabin": {
+    "src": "/media/vanuatu-cabin.552e45793a.webp",
+    "width": 792,
+    "height": 580
+  },
+  "vanuatu-side": {
+    "src": "/media/vanuatu-side.31562ecefc.webp",
+    "width": 1280,
+    "height": 719
+  },
+  "shipyard-exterior": {
+    "src": "/media/shipyard-exterior.9b83af95a4.webp",
+    "width": 1800,
+    "height": 1020
+  },
+  "vanuatu-plans": {
+    "src": "/media/vanuatu-plans.bb210569fb.webp",
+    "width": 1500,
+    "height": 2116
+  },
+  "storm-structure": {
+    "src": "/media/storm-structure.ea1e325280.webp",
+    "width": 926,
+    "height": 780
+  },
+  "vanuatu-workshop": {
+    "src": "/media/vanuatu-workshop.24b2434318.mp4",
+    "width": 848,
+    "height": 480
+  }
+}

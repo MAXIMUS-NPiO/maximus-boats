@@ -1,0 +1,325 @@
+{
+  "vanuatu": {
+    "name": "VANUATU",
+    "image": "/media/vanuatu-render.634073d4bc.webp",
+    "en": {
+      "subtitle": "Expeditionary motor-sailer project & refit dossier",
+      "description": "The dossier combines a 24-metre design with technical arrangements, exterior development, onboard systems and records of reconstruction and completion. Request an updated project dossier for current status and the final agreed configuration.",
+      "specs": [
+        [
+          "Design length",
+          "24 m"
+        ],
+        [
+          "Design beam",
+          "6.36 m"
+        ],
+        [
+          "Hull material",
+          "Steel"
+        ],
+        [
+          "Propulsion concept",
+          "Sail + twin diesel engines"
+        ],
+        [
+          "Catalogue engine power",
+          "2 × 247 BHP"
+        ],
+        [
+          "Documentation",
+          "Design drawings + refit photographs"
+        ]
+      ],
+      "note": "The stated length is a design-document value. Final vessel particulars, registration status, completed works and availability must be confirmed against the relevant current documentation.",
+      "extraLabel": "General arrangement — supplied design drawing",
+      "cta": "Discuss VANUATU"
+    },
+    "ru": {
+      "subtitle": "Экспедиционная парусно-моторная яхта — проект и досье рефита",
+      "description": "Досье объединяет проект длиной 24 м, общие расположения, проработку экстерьера, судовые системы и материалы реконструкции и достройки. Актуальная стадия работ и окончательная конфигурация подтверждаются обновлённым досье.",
+      "specs": [
+        [
+          "Проектная длина",
+          "24 м"
+        ],
+        [
+          "Проектная ширина",
+          "6,36 м"
+        ],
+        [
+          "Материал корпуса",
+          "Сталь"
+        ],
+        [
+          "Движительная концепция",
+          "Парус + два дизельных двигателя"
+        ],
+        [
+          "Мощность по каталогу",
+          "2 × 247 BHP"
+        ],
+        [
+          "Документация",
+          "Чертежи + фотографии рефита"
+        ]
+      ],
+      "note": "Указана длина из проектной документации. Окончательные характеристики судна, регистрационный статус, выполненные работы и доступность подтверждаются соответствующими актуальными документами.",
+      "extraLabel": "Общее расположение — исходный проектный чертёж",
+      "cta": "Обсудить VANUATU"
+    },
+    "extra": "/media/vanuatu-plans.bb210569fb.webp"
+  },
+  "storm": {
+    "name": "STORM",
+    "image": "/media/storm-render.35ef3483e6.webp",
+    "en": {
+      "subtitle": "Private steel motor yacht — design project",
+      "description": "The STORM design features a steel hull and superstructure, a flybridge, open bow and stern spaces, three cabins with bathrooms and a saloon with a dining and food-preparation area.",
+      "specs": [
+        [
+          "Length overall",
+          "22.0 m"
+        ],
+        [
+          "Design waterline length",
+          "20.0 m"
+        ],
+        [
+          "Overall beam",
+          "5.59 m"
+        ],
+        [
+          "Overall draft",
+          "1.20 m"
+        ],
+        [
+          "Berths",
+          "6"
+        ],
+        [
+          "Capacity including captain",
+          "12"
+        ],
+        [
+          "Main engine power",
+          "2 × 250 hp"
+        ],
+        [
+          "Hull material",
+          "Marine steel"
+        ]
+      ],
+      "note": "Overall length and waterline length are separate specifications. Final equipment, finishes, construction scope and acceptance requirements are agreed for the individual project.",
+      "extraLabel": "Hull structure — design documentation",
+      "cta": "Discuss STORM"
+    },
+    "ru": {
+      "subtitle": "Частная моторная яхта со стальным корпусом — проект",
+      "description": "Проект STORM включает стальной корпус и надстройку, флайбридж, открытые носовое и кормовое пространства, три каюты с санузлами, салон с обеденной зоной и зоной приготовления пищи.",
+      "specs": [
+        [
+          "Габаритная длина",
+          "22,0 м"
+        ],
+        [
+          "Проектная длина по ватерлинии",
+          "20,0 м"
+        ],
+        [
+          "Габаритная ширина",
+          "5,59 м"
+        ],
+        [
+          "Габаритная осадка",
+          "1,20 м"
+        ],
+        [
+          "Спальные места",
+          "6"
+        ],
+        [
+          "Вместимость, включая капитана",
+          "12"
+        ],
+        [
+          "Мощность главных двигателей",
+          "2 × 250 hp"
+        ],
+        [
+          "Материал корпуса",
+          "Судовая сталь"
+        ]
+      ],
+      "note": "Габаритная длина и длина по ватерлинии — разные характеристики. Итоговые оборудование, отделка, объём постройки и требования к приёмке согласовываются для конкретного проекта.",
+      "extraLabel": "Конструкция корпуса — проектная документация",
+      "cta": "Обсудить STORM"
+    },
+    "extra": "/media/storm-structure.ea1e325280.webp"
+  },
+  "family": {
+    "name": "FAMILY",
+    "image": "/media/family-render.3aad4c1d75.webp",
+    "en": {
+      "subtitle": "Family-oriented private motor yacht — design project",
+      "description": "A 15.2-metre steel motor-yacht project with a covered wheelhouse and open deck areas forward and aft. The project description places the emphasis on family use, layout and individual outfitting.",
+      "specs": [
+        [
+          "Length overall",
+          "15.2 m"
+        ],
+        [
+          "Overall beam",
+          "5.10 m"
+        ],
+        [
+          "Total displacement",
+          "27.36 t"
+        ],
+        [
+          "Berths",
+          "4 (+2)"
+        ],
+        [
+          "Capacity",
+          "12 persons"
+        ],
+        [
+          "Catalogue engine power",
+          "2 × 200–300 hp"
+        ],
+        [
+          "Hull and superstructure",
+          "Marine steel"
+        ]
+      ],
+      "note": "Specifications follow the FAMILY technical table. Final propulsion, accommodation, equipment and outfitting are agreed individually against the engineering brief.",
+      "extraLabel": "",
+      "cta": "Discuss FAMILY"
+    },
+    "ru": {
+      "subtitle": "Частная моторная яхта для семьи — проект",
+      "description": "Проект стальной моторной яхты длиной 15,2 м с закрытой рулевой рубкой и открытыми палубными пространствами в носовой и кормовой частях. Акцент — семейное использование, планировка и индивидуальное оснащение.",
+      "specs": [
+        [
+          "Габаритная длина",
+          "15,2 м"
+        ],
+        [
+          "Габаритная ширина",
+          "5,10 м"
+        ],
+        [
+          "Полное водоизмещение",
+          "27,36 т"
+        ],
+        [
+          "Спальные места",
+          "4 (+2)"
+        ],
+        [
+          "Вместимость",
+          "12 человек"
+        ],
+        [
+          "Мощность по каталогу",
+          "2 × 200–300 hp"
+        ],
+        [
+          "Корпус и надстройка",
+          "Судовая сталь"
+        ]
+      ],
+      "note": "Параметры приведены по технической таблице FAMILY. Итоговая движительная установка, размещение, оборудование и оснащение согласовываются индивидуально в рамках инженерного задания.",
+      "extraLabel": "",
+      "cta": "Обсудить FAMILY"
+    }
+  },
+  "hunter": {
+    "name": "HUNTER",
+    "image": "/media/hunter-render.b4edac926c.webp",
+    "en": {
+      "subtitle": "Multipurpose speed boat — design platform",
+      "description": "A deep-V steel-hull platform described for patrol, surveillance, search and rescue, and other marine tasks within the agreed technical configuration. The group portfolio also contains a separate HUNTER patrol-variant photograph.",
+      "specs": [
+        [
+          "Catalogue length overall",
+          "14.9 m"
+        ],
+        [
+          "Catalogue beam",
+          "4.1 m"
+        ],
+        [
+          "Draft at maximum displacement",
+          "1.0 m"
+        ],
+        [
+          "Loaded displacement",
+          "21.0 t"
+        ],
+        [
+          "Main propulsion in dedicated table",
+          "2 × 500 hp"
+        ],
+        [
+          "Catalogue top speed",
+          "32 knots at 50% load"
+        ],
+        [
+          "Range in dedicated table",
+          "180–300 nm (5% reserve)"
+        ],
+        [
+          "Hull material",
+          "Marine steel"
+        ]
+      ],
+      "note": "Values shown follow the dedicated HUNTER catalogue table. Speed and range are configuration- and loading-dependent catalogue figures, not certified sea-trial results for a particular vessel. Request the final technical specification for your intended use.",
+      "extraLabel": "HUNTER patrol variant — source photograph, not a photograph of the camouflage design above",
+      "cta": "Discuss HUNTER"
+    },
+    "ru": {
+      "subtitle": "Многоцелевой скоростной катер — проектная платформа",
+      "description": "Платформа со стальным корпусом deep-V описана для патрулирования, наблюдения, поиска, спасения и других морских задач в пределах согласованной технической конфигурации. В портфеле группы также есть отдельная фотография патрульного варианта HUNTER.",
+      "specs": [
+        [
+          "Габаритная длина по каталогу",
+          "14,9 м"
+        ],
+        [
+          "Ширина по каталогу",
+          "4,1 м"
+        ],
+        [
+          "Осадка при максимальном водоизмещении",
+          "1,0 м"
+        ],
+        [
+          "Полное водоизмещение",
+          "21,0 т"
+        ],
+        [
+          "Двигатели в отдельной таблице",
+          "2 × 500 hp"
+        ],
+        [
+          "Максимальная скорость по каталогу",
+          "32 узла при загрузке 50%"
+        ],
+        [
+          "Дальность в отдельной таблице",
+          "180–300 миль (резерв 5%)"
+        ],
+        [
+          "Материал корпуса",
+          "Судовая сталь"
+        ]
+      ],
+      "note": "Использована отдельная каталожная таблица HUNTER. Скорость и дальность зависят от комплектации и загрузки; это каталожные параметры, а не подтверждённые результаты испытаний конкретного судна. Запросите окончательную спецификацию под вашу задачу.",
+      "extraLabel": "Патрульный вариант HUNTER — исходная фотография, а не фотография камуфляжного проекта выше",
+      "cta": "Обсудить HUNTER"
+    },
+    "extra": "/media/hunter-patrol.cdd8d6de17.webp"
+  }
+}

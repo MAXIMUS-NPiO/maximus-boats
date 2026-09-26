@@ -1,0 +1,307 @@
+[
+  {
+    "asset": "/media/hero-vanuatu.9adc574216.webp",
+    "source_file": "V3_Vanuatu_Read Mode.pdf",
+    "source_page": 15,
+    "role": "source_photo",
+    "source_pixel_dimensions": [
+      1806,
+      1419
+    ],
+    "export_pixel_dimensions": [
+      1806,
+      1419
+    ],
+    "crop_fraction": null,
+    "operation": "Extraction; optional rectangular crop; proportional downscale only; WebP compression. No generation, retouching, recolouring or geometry changes.",
+    "notes": "",
+    "sha256": "9adc5742168827e9ddf4d75eaae5a057d4ecad0ab1c6793f8afd16dea4605e8b",
+    "source_sha256": "aa769ee23bded415ae75912e61078364d891a12a83599ea1bd255fb0dfdc2ccb",
+    "previous_asset": "assets/hero-vanuatu.webp"
+  },
+  {
+    "asset": "/media/vanuatu-render.634073d4bc.webp",
+    "source_file": "MY-DES-0010_2020_General arrangement_Rev1 2(1).pdf",
+    "source_page": 8,
+    "role": "design_visual",
+    "source_pixel_dimensions": [
+      1035,
+      718
+    ],
+    "export_pixel_dimensions": [
+      1035,
+      718
+    ],
+    "crop_fraction": null,
+    "operation": "Extraction; optional rectangular crop; proportional downscale only; WebP compression. No generation, retouching, recolouring or geometry changes.",
+    "notes": "",
+    "sha256": "634073d4bccfc7b936d296b0204ead1bcefea4af0607a25e784c5d43d3c901b3",
+    "source_sha256": "1daba04dfba0f945eb7cc4aa89a64c09b23cdf9fcc3719f87da029ff6e6dad5e",
+    "previous_asset": "assets/vanuatu-render.webp"
+  },
+  {
+    "asset": "/media/storm-render.35ef3483e6.webp",
+    "source_file": "Group of Shipbuilding Companies Headed by MAXIMUS VEGAS LLC 2.pdf",
+    "source_page": 22,
+    "role": "design_visual",
+    "source_pixel_dimensions": [
+      2338,
+      1653
+    ],
+    "export_pixel_dimensions": [
+      1600,
+      758
+    ],
+    "crop_fraction": [
+      0,
+      0.145,
+      1,
+      0.815
+    ],
+    "operation": "Extraction; optional rectangular crop; proportional downscale only; WebP compression. No generation, retouching, recolouring or geometry changes.",
+    "notes": "",
+    "sha256": "35ef3483e692fc219a2780d0d1fe1240f5816cad41875e019dd11ede5aa3a7af",
+    "source_sha256": "fbf03aeac99e7193a690c2ce859dc13564020ad8a418f787dff2c83f86abead0",
+    "previous_asset": "assets/storm-render.webp"
+  },
+  {
+    "asset": "/media/family-render.3aad4c1d75.webp",
+    "source_file": "Group of Shipbuilding Companies Headed by MAXIMUS VEGAS LLC 2.pdf",
+    "source_page": 25,
+    "role": "design_visual",
+    "source_pixel_dimensions": [
+      2456,
+      1736
+    ],
+    "export_pixel_dimensions": [
+      1600,
+      808
+    ],
+    "crop_fraction": [
+      0,
+      0.145,
+      1,
+      0.86
+    ],
+    "operation": "Extraction; optional rectangular crop; proportional downscale only; WebP compression. No generation, retouching, recolouring or geometry changes.",
+    "notes": "",
+    "sha256": "3aad4c1d757e30afc0ab44d46b28ffb3a8518dfa5f1407f68235113b9a39681f",
+    "source_sha256": "fbf03aeac99e7193a690c2ce859dc13564020ad8a418f787dff2c83f86abead0",
+    "previous_asset": "assets/family-render.webp"
+  },
+  {
+    "asset": "/media/hunter-render.b4edac926c.webp",
+    "source_file": "Group of Shipbuilding Companies Headed by MAXIMUS VEGAS LLC 2.pdf",
+    "source_page": 28,
+    "role": "design_visual",
+    "source_pixel_dimensions": [
+      2315,
+      1637
+    ],
+    "export_pixel_dimensions": [
+      1600,
+      713
+    ],
+    "crop_fraction": [
+      0,
+      0.18,
+      1,
+      0.81
+    ],
+    "operation": "Extraction; optional rectangular crop; proportional downscale only; WebP compression. No generation, retouching, recolouring or geometry changes.",
+    "notes": "",
+    "sha256": "b4edac926cfba78514bcf8d7065d123c915e2ed86729c85ea925d763ca7a6d90",
+    "source_sha256": "fbf03aeac99e7193a690c2ce859dc13564020ad8a418f787dff2c83f86abead0",
+    "previous_asset": "assets/hunter-render.webp"
+  },
+  {
+    "asset": "/media/hunter-patrol.cdd8d6de17.webp",
+    "source_file": "Group of Shipbuilding Companies Headed by MAXIMUS VEGAS LLC 2.pdf",
+    "source_page": 31,
+    "role": "source_photo",
+    "source_pixel_dimensions": [
+      2382,
+      1373
+    ],
+    "export_pixel_dimensions": [
+      1600,
+      922
+    ],
+    "crop_fraction": null,
+    "operation": "Extraction; optional rectangular crop; proportional downscale only; WebP compression. No generation, retouching, recolouring or geometry changes.",
+    "notes": "Patrol variant. Do not represent as a photograph of the camouflage multipurpose render.",
+    "sha256": "cdd8d6de173db05dc5c9682695eed0d5b1b64b0e8a2331cf36c23c306c8e8fbe",
+    "source_sha256": "fbf03aeac99e7193a690c2ce859dc13564020ad8a418f787dff2c83f86abead0",
+    "previous_asset": "assets/hunter-patrol.webp"
+  },
+  {
+    "asset": "/media/engineering-cad.9aaa3c1c60.webp",
+    "source_file": "Group of Shipbuilding Companies Headed by MAXIMUS VEGAS LLC 2.pdf",
+    "source_page": 12,
+    "role": "engineering_visual",
+    "source_pixel_dimensions": [
+      1420,
+      942
+    ],
+    "export_pixel_dimensions": [
+      1420,
+      942
+    ],
+    "crop_fraction": null,
+    "operation": "Extraction; optional rectangular crop; proportional downscale only; WebP compression. No generation, retouching, recolouring or geometry changes.",
+    "notes": "",
+    "sha256": "9aaa3c1c60ea025397642363853b83c8ec139998e6b1e8d1cbc6e3e096edf572",
+    "source_sha256": "fbf03aeac99e7193a690c2ce859dc13564020ad8a418f787dff2c83f86abead0",
+    "previous_asset": "assets/engineering-cad.webp"
+  },
+  {
+    "asset": "/media/vanuatu-salon.db42fd8265.webp",
+    "source_file": "V3_Vanuatu_Read Mode.pdf",
+    "source_page": 5,
+    "role": "source_photo",
+    "source_pixel_dimensions": [
+      1585,
+      1087
+    ],
+    "export_pixel_dimensions": [
+      1585,
+      1087
+    ],
+    "crop_fraction": null,
+    "operation": "Extraction; optional rectangular crop; proportional downscale only; WebP compression. No generation, retouching, recolouring or geometry changes.",
+    "notes": "",
+    "sha256": "db42fd82658cc7f6d0e73994864dfa2d3366508da2f1dd6d9a6351d7bab9dcec",
+    "source_sha256": "aa769ee23bded415ae75912e61078364d891a12a83599ea1bd255fb0dfdc2ccb",
+    "previous_asset": "assets/vanuatu-salon.webp"
+  },
+  {
+    "asset": "/media/vanuatu-cabin.552e45793a.webp",
+    "source_file": "V3_Vanuatu_Read Mode.pdf",
+    "source_page": 7,
+    "role": "source_photo",
+    "source_pixel_dimensions": [
+      792,
+      580
+    ],
+    "export_pixel_dimensions": [
+      792,
+      580
+    ],
+    "crop_fraction": null,
+    "operation": "Extraction; optional rectangular crop; proportional downscale only; WebP compression. No generation, retouching, recolouring or geometry changes.",
+    "notes": "",
+    "sha256": "552e45793aeb5b40811b02c2e6e7796d3040b2b09c524ec4c9e5be75ab440f3a",
+    "source_sha256": "aa769ee23bded415ae75912e61078364d891a12a83599ea1bd255fb0dfdc2ccb",
+    "previous_asset": "assets/vanuatu-cabin.webp"
+  },
+  {
+    "asset": "/media/vanuatu-side.31562ecefc.webp",
+    "source_file": "PHOTO-2025-03-14-13-08-27 2.pdf",
+    "source_page": 2,
+    "role": "source_photo",
+    "source_pixel_dimensions": [
+      1280,
+      719
+    ],
+    "export_pixel_dimensions": [
+      1280,
+      719
+    ],
+    "crop_fraction": null,
+    "operation": "Extraction; optional rectangular crop; proportional downscale only; WebP compression. No generation, retouching, recolouring or geometry changes.",
+    "notes": "",
+    "sha256": "31562ecefcfd2835dfdfa05e1aea89fbc421eedc58db98968d0b4af83953ad8e",
+    "source_sha256": "ea44917790008b4a6a325d23157b603a738800806116a3d9784fcd2930139fde",
+    "previous_asset": "assets/vanuatu-side.webp"
+  },
+  {
+    "asset": "/media/shipyard-exterior.9b83af95a4.webp",
+    "source_file": "MAXIMUS SHIPYARD - RAK, UAE.pdf",
+    "source_page": 36,
+    "role": "architectural_project_visual",
+    "source_pixel_dimensions": [
+      2921,
+      2065
+    ],
+    "export_pixel_dimensions": [
+      1800,
+      1020
+    ],
+    "crop_fraction": [
+      0.01,
+      0.143,
+      0.855,
+      0.82
+    ],
+    "operation": "Extraction; optional rectangular crop; proportional downscale only; WebP compression. No generation, retouching, recolouring or geometry changes.",
+    "notes": "Proposed Ras Al Khaimah shipyard; not an operational-status photograph.",
+    "sha256": "9b83af95a45309ae1f85537de36c713fdee3f3b5582dd99e472f9be0ca7e46d9",
+    "source_sha256": "2914dcce14ed2a7a15234843a1d0f8886272a047da1e14a5fe892b3c90496000",
+    "previous_asset": "assets/shipyard-exterior.webp"
+  },
+  {
+    "asset": "/media/vanuatu-plans.bb210569fb.webp",
+    "source_file": "MY-DES-0010_2020_General arrangement_Rev1 2(1).pdf",
+    "source_page": 3,
+    "role": "engineering_drawing",
+    "source_pixel_dimensions": [
+      3368,
+      4768
+    ],
+    "export_pixel_dimensions": [
+      1500,
+      2116
+    ],
+    "crop_fraction": [
+      0.06,
+      0.035,
+      0.94,
+      0.912
+    ],
+    "operation": "Extraction; optional rectangular crop; proportional downscale only; WebP compression. No generation, retouching, recolouring or geometry changes.",
+    "notes": "Cropped from rendered source page; composite source artwork retained.",
+    "sha256": "bb210569fb2852de1b971eefcaa145f933faadbdd1ae51c4ba2ff9ae81d9c33f",
+    "source_sha256": "1daba04dfba0f945eb7cc4aa89a64c09b23cdf9fcc3719f87da029ff6e6dad5e",
+    "previous_asset": "assets/vanuatu-plans.webp"
+  },
+  {
+    "asset": "/media/storm-structure.ea1e325280.webp",
+    "source_file": "STORM 1.0.pdf",
+    "source_page": 8,
+    "role": "engineering_drawing",
+    "source_pixel_dimensions": [
+      1684,
+      1191
+    ],
+    "export_pixel_dimensions": [
+      926,
+      780
+    ],
+    "crop_fraction": [
+      0.43,
+      0.23,
+      0.98,
+      0.885
+    ],
+    "operation": "Extraction; optional rectangular crop; proportional downscale only; WebP compression. No generation, retouching, recolouring or geometry changes.",
+    "notes": "Cropped from rendered source page; composite source artwork retained.",
+    "sha256": "ea1e325280ba5a98c9d9cd5ccc253b5a539bbf5b6efbce21b44d7dec6cf86a65",
+    "source_sha256": "c0c9ea3d226bfcc1ce306c0582ec51f8afbd30eeb7e92cab0f71f42179ddaf76",
+    "previous_asset": "assets/storm-structure.webp"
+  },
+  {
+    "asset": "/media/vanuatu-workshop.24b2434318.mp4",
+    "source_file": "VIDEO-2025-03-14-13-08-27.mp4",
+    "source_page": null,
+    "role": "source_video",
+    "operation": "Original video copied without editing. Playback initiated by user, initially muted.",
+    "pixel_dimensions": [
+      848,
+      480
+    ],
+    "duration_seconds": 8.359184,
+    "sha256": "24b243431871bb179f0ce0f362ed536173a5b94d1e1c9cc9f6eb44838d1689f3",
+    "source_sha256": "24b243431871bb179f0ce0f362ed536173a5b94d1e1c9cc9f6eb44838d1689f3",
+    "previous_asset": "assets/vanuatu-workshop.mp4"
+  }
+]

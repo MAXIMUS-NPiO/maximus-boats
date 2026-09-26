@@ -1,0 +1,11 @@
+node_modules/
+dist/
+artifacts/
+.vercel/
+.git/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.log
+.DS_Store

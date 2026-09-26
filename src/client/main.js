@@ -1,0 +1,8 @@
+import { initNavigation } from './modules/navigation.js';
+import { initTabs } from './modules/tabs.js';
+import { initDialogs } from './modules/dialogs.js';
+import { initEnquiry } from './modules/enquiry.js';
+initNavigation();
+initTabs();
+initDialogs();
+initEnquiry();

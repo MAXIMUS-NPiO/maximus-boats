@@ -1,0 +1,101 @@
+{
+  "method": "Built HTML and exact source media inlined into an in-memory Chromium document; live provider delivery not executed.",
+  "widths": [
+    {
+      "locale": "ru",
+      "width": 320,
+      "fourTabs": "pass",
+      "overflow": false
+    },
+    {
+      "locale": "ru",
+      "width": 390,
+      "fourTabs": "pass",
+      "overflow": false
+    },
+    {
+      "locale": "ru",
+      "width": 768,
+      "fourTabs": "pass",
+      "overflow": false
+    },
+    {
+      "locale": "ru",
+      "width": 1024,
+      "fourTabs": "pass",
+      "overflow": false
+    },
+    {
+      "locale": "ru",
+      "width": 1440,
+      "fourTabs": "pass",
+      "overflow": false
+    },
+    {
+      "locale": "ru",
+      "width": 1920,
+      "fourTabs": "pass",
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 320,
+      "fourTabs": "pass",
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 390,
+      "fourTabs": "pass",
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 768,
+      "fourTabs": "pass",
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 1024,
+      "fourTabs": "pass",
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 1440,
+      "fourTabs": "pass",
+      "overflow": false
+    },
+    {
+      "locale": "en",
+      "width": 1920,
+      "fourTabs": "pass",
+      "overflow": false
+    }
+  ],
+  "pageErrors": [],
+  "checks": [
+    {
+      "locale": "ru",
+      "keyboardTabs": true,
+      "videoDialog": true,
+      "formValidation": true,
+      "safePlainTextReview": true,
+      "mobileMenu": true,
+      "sourceImagesDecoded": true,
+      "decorativeStars": false
+    },
+    {
+      "locale": "en",
+      "keyboardTabs": true,
+      "videoDialog": true,
+      "formValidation": true,
+      "safePlainTextReview": true,
+      "mobileMenu": true,
+      "sourceImagesDecoded": true,
+      "decorativeStars": false
+    }
+  ],
+  "result": "PASS"
+}

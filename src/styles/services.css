@@ -1,0 +1,2 @@
+
+.services{background:#151718}.services-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px}.service{border-top:1px solid var(--line);padding-top:23px}.service .number{font:11px/1 monospace;color:var(--gold);margin-bottom:24px;display:block}.service h3{font-size:27px;line-height:1.12;min-height:63px}.service p{font-size:13px;line-height:1.75;margin-top:17px}.service .text-link{margin-top:23px;font-size:10px}

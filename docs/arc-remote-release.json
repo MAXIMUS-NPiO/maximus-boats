@@ -1,0 +1,20 @@
+{
+  "repository": "https://github.com/MAXIMUS-NPiO/maximus-boats",
+  "branch": "redesign/arc",
+  "baselineCommit": "2a3cd006e0d8a4363fe6f3466d63b025055c4cf1",
+  "localTestedCommit": "957311f1874deb9e346acf56a0d9f23ef676c5aa",
+  "remoteRuntimeCommit": "ac05da295674c2e38dbae7f1188245760ebe34b0",
+  "sourceTreeEqualOutsideDocs": true,
+  "deployment": {
+    "id": "3rNKpxkpksNd34Wk58TSR6P64bj9",
+    "githubDeploymentId": 6686505412,
+    "url": "https://maximus-boats-11fudx7pl-maximus-fdc6.vercel.app",
+    "environment": "Preview",
+    "state": "success",
+    "createdAt": "2026-09-27T01:19:45Z"
+  },
+  "remoteBrowserCheck": "BLOCKED_BY_VERCEL_AUTHENTICATION",
+  "productionChanged": false,
+  "protectionChanged": false,
+  "realEmailSent": false
+}

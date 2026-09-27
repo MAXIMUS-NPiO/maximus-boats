@@ -34,13 +34,13 @@ vercel.json            Настройки сборки и функции
 Стек: предрендеренный HTML, CSS, JavaScript ES modules, Node.js. Это не React/Next.js проект. Компоненты собираются в реальные документы, а не в одностраничный клиентский роутер.
 
 ## Редактирование
-Контакты: `src/content/site.js`. Данные четырёх моделей: `src/content/projects.json`. Общие блоки: `src/components/*.html`. Переводы текстовых элементов хранятся в атрибутах data-en/data-ru и разрешаются при сборке. Внешний вид: `src/styles/direction-v2.css`; порядок подключения — `src/styles/order.json`.
+Контакты: `src/content/site.js`. Данные четырёх моделей: `src/content/projects.json`. Общие блоки: `src/components/*.html`. Переводы текстовых элементов хранятся в атрибутах data-en/data-ru и разрешаются при сборке. Внешний вид ветки Arc: `src/styles/arc.css`, локальные шрифты — `src/styles/fonts.css`; порядок подключения — `src/styles/order.json`.
 
 ## Публикация на Vercel
 Загрузите содержимое этой папки в корень репозитория, сохранив скрытые файлы `.github`, `.gitignore`, `.env.example`, `.nvmrc`. Рекомендуется первоначально закрытый репозиторий.
 Framework preset: Other. Node.js: 22.x. Build: `npm run build`. Output directory: `dist`. Install: `npm ci --ignore-scripts`. Настройки записаны в `vercel.json`.
 Не загружайте один файл превью вместо проекта. Не переносите `api/contact.js` в `dist`. Не добавляйте SPA-rewrite всех URL на index.html: страницы имеют собственные маршруты.
-Репозиторий GitHub: NOT PROVIDED. Проект Vercel: NOT PROVIDED. Публичный домен: NOT PROVIDED. Удалённая публикация в рамках подготовки пакета не выполнялась.
+Репозиторий GitHub: https://github.com/MAXIMUS-NPiO/maximus-boats. Vercel: maximus-fdc6 / maximus-boats. Публичный домен: https://www.maximus.boats. Статус ветки Arc и ограничения публикации: `docs/RELEASE_CHECKLIST.md`. Публичная версия не заменяется созданием локального превью.
 
 ## Форма
 По умолчанию `CONTACT_MODE=mailto`: письмо открывается в почтовом приложении посетителя, отправку выполняет посетитель. Есть копирование подготовленного текста. Приложение не сохраняет запросы в базу данных.
@@ -64,3 +64,8 @@ MIPA обозначена для IP-обращений. Запись в реес
 
 ## Автономное интерактивное превью
 After building, run `npm run export:preview`. This creates `artifacts/MAXIMUS_BOATS_PREVIEW.html`, containing the built EN/RU pages, images, video and browser interactions in one file. This viewing artifact is not the production repository or API deployment. Use the regular source and `vercel.json` for GitHub/Vercel.
+
+## Arc review — 27 September 2026
+The active stylesheet order is `fonts.css` then `arc.css`. Historical CSS files are retained but are not bundled. Original images, video, project specifications, public contacts, form backend and security configuration are unchanged. The Inter variable Latin/Cyrillic fonts are bundled under SIL OFL (`public/fonts/LICENSE.txt`).
+
+Optional real-HTTP browser QA: install Playwright separately, then run `node scripts/arc-browser-qa.mjs`. `PLAYWRIGHT_MODULE` and `BROWSER_EXECUTABLE` can point to local QA tooling. The script starts a local mailto-only server, blocks external/non-GET browser traffic, and writes the report and screenshots. This tooling is not a production dependency.

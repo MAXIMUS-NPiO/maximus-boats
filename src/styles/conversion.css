@@ -1,0 +1,160 @@
+/* Commercial hierarchy: visible choice, direct next steps and evidence-led partnerships. */
+:root { --image-radius: 18px; }
+.nav-wrap { min-height: 88px; }
+.nav-links { gap: 26px; }
+.nav-links a { font-size: 11px; }
+.sales-hero { --bg:var(--ocean); --text:#f4f5f1; --muted:#bccacc; --line:#466069; background:var(--bg); color:var(--text); }
+.sales-hero-grid { display:grid; grid-template-columns:minmax(0,.86fr) minmax(0,1.25fr); gap:clamp(28px,4vw,64px); align-items:center; padding-block:64px 70px; }
+.sales-hero-copy { min-width:0; }
+.sales-hero .eyebrow { font-size:10px; margin-bottom:26px; }
+.sales-hero h1 { font-size:clamp(58px,7vw,108px); line-height:1; letter-spacing:-.055em; }
+.sales-hero h1 span { display:block; }
+.sales-hero h1 span:last-child { color:#c8d5d6; }
+.sales-lead { max-width:480px; margin-top:28px; font-size:17px; line-height:1.7; }
+.sales-hero .actions { margin-top:28px; gap:18px 26px; }
+.sales-hero .text-link { font-size:13px; }
+.sales-hero-visual { background:#f3f4f4; color:var(--ocean); border-radius:18px; overflow:hidden; }
+.sales-hero-visual > img { width:100%; aspect-ratio:1.5; object-fit:contain; }
+.sales-hero-visual figcaption { display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:20px; padding:21px 24px; border-top:1px solid #d7dede; background:#fff; font-size:10px; color:#506069; }
+.sales-hero-visual figcaption > span:first-child { font-size:19px; color:var(--ocean); letter-spacing:.03em; }
+.sales-hero-visual figcaption a { display:grid; place-items:center; width:40px; height:40px; font-size:24px; border:1px solid #ccd5d5; border-radius:50%; }
+.entry-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); border-top:1px solid var(--line); padding-bottom:24px; }
+.entry-grid > a { display:flex; align-items:start; gap:18px; padding:30px 26px 18px 0; }
+.entry-grid > a + a { border-left:1px solid var(--line); padding-left:28px; }
+.entry-index { font-size:10px; padding-top:5px; color:var(--muted); }
+.entry-grid strong { font-size:17px; font-weight:400; line-height:1.35; }
+.entry-grid p { font-size:11px; margin-top:8px; line-height:1.5; }
+.entry-grid > a > span:last-child { margin-left:auto; font-size:21px; }
+.entry-grid > a:hover strong { text-decoration:underline; text-underline-offset:5px; }
+#projects.yacht-collection { --bg:#f5f6f3; --text:#102c34; --muted:#56686d; --line:#d4dedd; color-scheme:light; }
+.yacht-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:32px; }
+.yacht-card { min-width:0; background:white; border:1px solid #d9e0de; border-radius:18px; overflow:hidden; }
+.yacht-card-image { position:relative; display:block; background:#edf0ef; }
+.yacht-card-image img { width:100%; aspect-ratio:1.85; object-fit:contain; }
+.yacht-card-image > span { position:absolute; left:20px; top:18px; padding:5px 10px; font-size:9px; letter-spacing:.1em; background:#ffffffed; color:#344e55; border:1px solid #dde4e2; border-radius:3px; }
+.yacht-card-body { padding:32px; }
+.yacht-card .eyebrow { margin-bottom:12px; font-size:10px; }
+.yacht-card h3 { font-size:42px; margin-bottom:18px; }
+.yacht-card-body > p { min-height:78px; font-size:14px; line-height:1.7; }
+.yacht-card .collection-specs { grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; margin-top:24px; }
+.yacht-card .collection-specs > div { padding-block:16px 20px; }
+.yacht-card .collection-specs dt { min-height:32px; font-size:10px; }
+.yacht-card .collection-specs dd { font-size:23px; margin-top:8px; }
+.card-actions { display:flex; flex-wrap:wrap; justify-content:space-between; gap:12px 22px; padding-top:8px; }
+.card-actions .text-link { font-size:12px; gap:12px; }
+.partner-teaser { background:#e3e9e6; }
+.partner-teaser-grid { display:grid; grid-template-columns:minmax(0,.9fr) minmax(0,1.2fr); align-items:center; gap:64px; }
+.partner-teaser h2 { font-size:clamp(38px,4vw,62px); }
+.partner-teaser p { margin-block:26px 30px; max-width:520px; }
+.partner-teaser img { width:100%; border-radius:18px; }
+.partner-teaser figcaption, .partner-panorama figcaption { font-size:10px; letter-spacing:.07em; color:var(--muted); margin-top:16px; }
+.process-grid { list-style:none; padding:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:42px; margin:0 0 42px; }
+.process-grid li { border-top:1px solid var(--line); padding-top:22px; min-width:0; }
+.process-grid li > span { font-size:12px; color:var(--muted); }
+.process-grid h3 { font-size:29px; line-height:1.16; margin-block:28px 18px; }
+.process-grid p { font-size:14px; }
+.detail-intro .button { margin-top:24px; }
+.partner-hero { padding-top:40px; }
+.partner-hero > .container > .text-link { margin-bottom:42px; }
+.partner-hero .section-heading { grid-template-columns:1.1fr 1fr; gap:76px; align-items:center; }
+.partner-hero h1 { font-size:clamp(42px,5.2vw,78px); }
+.partner-intro .actions { margin-top:28px; }
+.partner-panorama img { width:100%; max-height:580px; object-fit:contain; background:#161e30; border-radius:18px; }
+.partner-facts { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:40px; margin-top:48px; }
+.partner-facts > div { border-top:1px solid var(--line); padding-top:22px; }
+.partner-facts strong { font-size:clamp(30px,3.3vw,46px); font-weight:300; letter-spacing:-.03em; }
+.partner-facts p { font-size:13px; margin-top:12px; max-width:300px; }
+.partner-basis { background:var(--bone); }
+.evidence-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:38px; }
+.evidence-grid article { border-top:1px solid #afbebc; padding-top:26px; display:flex; flex-direction:column; align-items:start; min-width:0; }
+.evidence-grid .number { margin-bottom:28px; }
+.evidence-grid h3 { font-size:30px; line-height:1.18; margin-bottom:22px; }
+.evidence-grid p { font-size:14px; margin-bottom:26px; }
+.evidence-grid .text-link, .evidence-status { margin-top:auto; font-size:12px; }
+.evidence-status { border-top:1px solid var(--line); padding-top:12px; color:var(--muted); }
+.project-status { margin-top:50px; padding:24px 28px; border-left:2px solid #627c76; background:#ffffff70; font-size:13px; }
+.partner-next { --bg:var(--ocean); --text:#f4f5f1; --muted:#bccacc; --line:#466069; background:var(--bg); color:var(--text); }
+.partner-next-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; }
+.partner-next .button { margin-top:28px; }
+.partner-entity { font-size:12px; margin-top:30px; }
+.contact-heading h2 { font-size:clamp(40px,5vw,74px); }
+.footer-links { max-width:770px; }
+@media (max-width:1200px) {
+ .nav-links { gap:20px; }
+ .sales-hero h1 { font-size:clamp(60px,7.6vw,90px); }
+ .partner-teaser-grid { gap:40px; }
+ .entry-grid strong { font-size:15px; }
+ .yacht-card-body { padding:26px; }
+ .yacht-card-body > p { min-height:96px; }
+ .partner-hero .section-heading { gap:42px; }
+}
+@media (max-width:900px) {
+ .sales-hero-grid { grid-template-columns:1fr; gap:34px; padding-top:44px; padding-bottom:34px; }
+ .sales-hero-copy { max-width:650px; }
+ .sales-hero h1 span { display:inline; }
+ .sales-hero h1 span + span::before { content:' '; }
+ .sales-hero h1 { font-size:clamp(52px,9vw,82px); }
+ .sales-lead { max-width:580px; }
+ .sales-hero-visual > img { aspect-ratio:2; }
+ .entry-grid > a { padding-right:16px; gap:10px; }
+ .entry-grid > a + a { padding-left:16px; }
+ .entry-index { display:none; }
+ .yacht-grid { gap:22px; }
+ .yacht-card-body { padding:22px; }
+ .yacht-card h3 { font-size:34px; }
+ .yacht-card .collection-specs { gap:10px; }
+ .yacht-card .collection-specs dd { font-size:20px; }
+ .partner-teaser-grid { grid-template-columns:1fr; gap:36px; }
+ .partner-teaser p { max-width:650px; }
+ .process-grid { gap:26px; }
+ .process-grid h3 { font-size:25px; }
+ .partner-hero .section-heading { grid-template-columns:1fr; gap:28px; }
+ .partner-hero h1 { max-width:760px; }
+ .evidence-grid { gap:26px; }
+ .evidence-grid h3 { font-size:25px; }
+ .partner-next-grid { grid-template-columns:1fr; gap:32px; }
+}
+@media (max-width:600px) {
+ .nav-wrap { min-height:78px; }
+ .sales-hero-grid { padding-top:36px; }
+ .sales-hero .eyebrow { font-size:9px; margin-bottom:22px; }
+ .sales-hero h1 { font-size:clamp(48px,12vw,72px); max-width:440px; }
+ .sales-lead { font-size:15px; line-height:1.65; margin-top:22px; }
+ .sales-hero .actions { align-items:start; flex-direction:column; gap:14px; }
+ .sales-hero .button { width:100%; }
+ .sales-hero-visual > img { aspect-ratio:1.65; }
+ .sales-hero-visual figcaption { padding:16px; gap:12px; grid-template-columns:1fr auto; }
+ .sales-hero-visual figcaption > span:first-child { font-size:18px; }
+ .sales-hero-visual figcaption > span:nth-child(2) { grid-column:1; font-size:9px; }
+ .sales-hero-visual figcaption > a { grid-column:2; grid-row:1 / 3; }
+ .entry-grid { grid-template-columns:1fr; padding-bottom:14px; }
+ .entry-grid > a, .entry-grid > a + a { border-left:0; padding:19px 0; border-bottom:1px solid var(--line); }
+ .entry-grid > a:last-child { border-bottom:0; }
+ .entry-index { display:block; margin-right:10px; }
+ .entry-grid strong { font-size:16px; }
+ .entry-grid p { margin-top:5px; }
+ .yacht-grid { grid-template-columns:1fr; gap:26px; }
+ .yacht-card-image img { aspect-ratio:1.7; }
+ .yacht-card-body > p { min-height:0; }
+ .yacht-card .collection-specs { margin-top:22px; gap:12px; }
+ .yacht-card .collection-specs dt { min-height:34px; }
+ .yacht-card .collection-specs dd { font-size:21px; }
+ .card-actions { flex-direction:column; align-items:stretch; }
+ .card-actions .text-link { padding-block:13px; }
+ .partner-teaser h2 { font-size:clamp(32px,8.5vw,46px); }
+ .process-grid, .evidence-grid, .partner-facts { grid-template-columns:1fr; gap:28px; }
+ .process-grid h3 { margin-top:18px; }
+ .partner-hero { padding-top:26px; }
+ .partner-hero > .container > .text-link { margin-bottom:32px; }
+ .partner-hero h1 { font-size:clamp(34px,9vw,50px); }
+ .partner-hero .eyebrow { font-size:9px; }
+ .partner-facts { gap:22px; margin-top:30px; }
+ .partner-facts strong { font-size:34px; }
+ .partner-facts p { max-width:100%; }
+ .project-status { padding:20px; margin-top:32px; }
+ .evidence-grid h3 { font-size:28px; }
+ .evidence-grid p { margin-bottom:20px; }
+ .contact-heading h2 { font-size:clamp(32px,8.6vw,48px); }
+ .detail-intro .button { width:100%; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }

@@ -1,5 +1,5 @@
 # MAXIMUS.BOATS
-Статус: FINAL SOURCE PACKAGE · Версия: 2.0.0 · Дата: 26 сентября 2026 года
+Статус: COMMERCIAL SITE RELEASE · Версия: 2.1.0 · Дата: 27 сентября 2026 года
 
 Отдельный проект лендинга для GitHub и Vercel. Исходники, компоненты, контент, стили, браузерная логика и серверный обработчик разделены. Удалены декоративные звёздочки. Использованы только изображения и видео из предоставленных sources. Коммерческие контакты и ссылка на инвестиционный клуб сохранены.
 
@@ -47,7 +47,7 @@ Framework preset: Other. Node.js: 22.x. Build: `npm run build`. Output directory
 Опциональная серверная отправка реализована через Resend и Cloudflare Turnstile. Для неё необходимы заполненные переменные из `.env.example`, проверенный отправитель и разрешённые origins. Ключи и аккаунты не создавались. Успех API означает принятие почтовым провайдером, а не гарантированную доставку во входящие. Перед включением публичной серверной формы настройте инфраструктурное ограничение частоты запросов.
 
 ## Индексация
-Индексация выключена по умолчанию. После утверждения домена и содержания задайте `SITE_URL` и `PUBLIC_INDEXABLE=true`. Noindex не является защитой доступа к конфиденциальному превью.
+Публичная сборка Vercel Production индексируется. Canonical-домен: `https://www.maximus.boats`; `SITE_URL` позволяет задать другой подтверждённый домен. Vercel Preview всегда остаётся noindex, даже при `PUBLIC_INDEXABLE=true`. Для локальной проверки индексируемой сборки задайте `PUBLIC_INDEXABLE=true`. Noindex не заменяет авторизацию Preview.
 
 ## Превью и проверки
 ```sh
@@ -55,7 +55,7 @@ npm run build
 npm run export:preview
 ```
 Создаётся `artifacts/MAXIMUS_BOATS_PREVIEW.html` — автономное превью со встроенными медиа, двумя языками и переходами между страницами моделей. Это просмотрная копия, не замена исходников.
-`npm run check:all`: проверка синтаксиса, 61 тест, SHA-256 медиа и сборка 12 локализованных страниц, корневой страницы и 404.
+`npm run check:all`: проверка синтаксиса, 61 тест, SHA-256 медиа и сборка 14 локализованных страниц, корневой страницы и 404.
 Опционально: `python scripts/browser-qa.py --chromium /usr/bin/chromium`. Для этой проверки нужны Python, Playwright и Chromium; они не являются зависимостями сайта.
 
 ## Источники и IP
@@ -66,6 +66,9 @@ MIPA обозначена для IP-обращений. Запись в реес
 After building, run `npm run export:preview`. This creates `artifacts/MAXIMUS_BOATS_PREVIEW.html`, containing the built EN/RU pages, images, video and browser interactions in one file. This viewing artifact is not the production repository or API deployment. Use the regular source and `vercel.json` for GitHub/Vercel.
 
 ## Arc review — 27 September 2026
-The active stylesheet order is `fonts.css` then `arc.css`. Historical CSS files are retained but are not bundled. Original images, video, project specifications, public contacts, form backend and security configuration are unchanged. The Inter variable Latin/Cyrillic fonts are bundled under SIL OFL (`public/fonts/LICENSE.txt`).
+The active stylesheet order is `fonts.css`, `arc.css`, then `conversion.css`. Historical CSS files are retained but are not bundled. Original images, video, project specifications, public contacts, form backend and security configuration are unchanged. The Inter variable Latin/Cyrillic fonts are bundled under SIL OFL (`public/fonts/LICENSE.txt`).
 
 Optional real-HTTP browser QA: install Playwright separately, then run `node scripts/arc-browser-qa.mjs`. `PLAYWRIGHT_MODULE` and `BROWSER_EXECUTABLE` can point to local QA tooling. The script starts a local mailto-only server, blocks external/non-GET browser traffic, and writes the report and screenshots. This tooling is not a production dependency.
+
+## Commercial audit — 27 September 2026
+The current release adds a direct yacht proposition, four visible yacht cards, dedicated EN/RU investor and partner routes, clearer project CTAs, the client discussion process, and production SEO. See `docs/COMMERCIAL_AUDIT_20260927.md` for findings, source boundaries and release evidence. The owner explicitly requested immediate correction and publication; the earlier Preview-only approval gate is superseded.

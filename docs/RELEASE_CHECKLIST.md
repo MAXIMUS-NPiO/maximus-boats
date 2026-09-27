@@ -1,12 +1,12 @@
 # MAXIMUS BOATS — Arc release checklist
-Статус: КОД СОХРАНЁН В GITHUB; VERCEL PREVIEW ГОТОВ; ПРОВЕРКА PREVIEW ОЖИДАЕТ АВТОРИЗАЦИИ
-Версия: Arc review 2 · Дата: 27 сентября 2026 года
+Статус: КОД СОХРАНЁН В GITHUB; VERCEL PREVIEW ПРОВЕРЕН; ОЖИДАЕТ УТВЕРЖДЕНИЯ ДИЗАЙНА ПЕРЕД PRODUCTION
+Версия: Arc review 3 · Дата: 27 сентября 2026 года
 
 ## Базовая версия и откат
 Ветка: `redesign/arc`. Исходный main: `2a3cd006e0d8a4363fe6f3466d63b025055c4cf1`. Работа выполнена в отдельном чистом клоне; чужие незакоммиченные изменения не затрагивались. Main повторно проверен после реализации — исходный SHA не изменился.
 Production deployment, зарегистрированный GitHub для этого main: https://maximus-boats-mbnejiny9-maximus-fdc6.vercel.app (GitHub deployment 6683088536; Vercel deployment J8vo8675eYzcaU55mLaA5t3ZKN5z).
 Проект: `maximus-fdc6 / maximus-boats`. Публичный сайт: https://www.maximus.boats/en/ и https://www.maximus.boats/ru/.
-Откат исходников: к сохранённому main выше. Адрес production deployment сохранён; актуальное назначение alias через Vercel API недоступно из-за scope 403 и должно быть подтверждено перед любым production promotion. Публичная версия в этой работе не заменялась.
+Откат исходников: к сохранённому main выше. После входа владельца в Vercel текущий production подтверждён непосредственно в панели проекта: deployment `J8vo8675eYzcaU55mLaA5t3ZKN5z`, статус Ready, source main `2a3cd00`, домены maximus.boats и www.maximus.boats. Исторический отказ Vercel API scope 403 больше не блокирует браузерную проверку. Публичная версия в этой работе не заменялась.
 
 ## Выполнено
 - [x] Arc / Refero DESIGN.md и визуальный референс изучены. Суда, фотографии, логотипы и заявления Arc не использованы.
@@ -26,7 +26,9 @@ Production deployment, зарегистрированный GitHub для это
 - [x] Подготовлены 24 скриншота страниц и секций.
 - [x] Ветка `redesign/arc` записана в GitHub через авторизованный браузер после разрешения владельца. Исходный проверенный локальный commit: `957311f1874deb9e346acf56a0d9f23ef676c5aa`. Remote commit с полным кодом дизайна: `ac05da295674c2e38dbae7f1188245760ebe34b0`. Все файлы вне docs совпали с проверенной локальной версией; документация выпуска добавляется отдельным commit. Первоначальные отказы интеграции 403 и Git transport 128 сохранены как история, а не текущая блокировка записи.
 - [x] Vercel Preview автоматически создан существующей Git-интеграцией в `maximus-fdc6 / maximus-boats`: https://maximus-boats-11fudx7pl-maximus-fdc6.vercel.app . Deployment `3rNKpxkpksNd34Wk58TSR6P64bj9`, GitHub deployment `6686505412`, environment `Preview`, state `success`. API Vercel по-прежнему не даёт доступ к scope (403).
-- [ ] Проверка удалённого Preview: при открытии браузер перенаправлен на Vercel Authentication. Требуется авторизованная сессия Vercel; успешная сборка не заменяет проверку страницы. Защита Preview не отключалась.
+- [x] Авторизация Vercel завершена. Проверен deployment `FAFUgcpuYUoxpXMq7c5bnGnmmbLf`, commit `46bab8118bbbbfcc67b2e9f3372867460b60da45`, статус Ready, environment Preview: https://maximus-boats-ghm8gk1uq-maximus-fdc6.vercel.app . Это версия исходного проверенного runtime `ac05da2` с документацией; исполняемые файлы не изменились.
+- [x] Удалённая браузерная проверка: 12 маршрутов EN/RU в авторизованном Chromium, viewport 1363 × 936. Горизонтального переполнения, обнаруженных повреждённых изображений и ошибок сайта в консоли нет. Переключение языков сохраняет соответствующую страницу всех четырёх проектов и Privacy. Меню, четыре вкладки моделей, галерея, Previous и Escape работают. Видео воспроизведено полностью (8.359184 секунды, readyState 4); закрытый диалог оставляет видео на паузе. Пустая форма показывает ошибки; заполненный запрос STORM копируется с сообщением «Enquiry copied. Nothing sent.». Отправка не запускалась. Диагностика расширения Chrome отделена от ошибок сайта.
+- [x] Проверены адреса ветки: https://maximus-boats-git-redesign-arc-maximus-fdc6.vercel.app/en/ и https://maximus-boats-git-redesign-arc-maximus-fdc6.vercel.app/ru/ . Защита Vercel Authentication сохранена. Сохранены новые скриншоты EN/RU развёрнутого Preview; предыдущие локальные мобильные скриншоты и проверки шести ширин остаются действительными.
 - [ ] Утверждение дизайна владельцем перед production promotion.
 - [ ] Production promotion и последующая проверка публичных EN/RU — не выполнялись.
 
@@ -37,7 +39,7 @@ Production deployment, зарегистрированный GitHub для это
 | ID | Изменение или ограничение | Состояние |
 |---|---|---|
 | R01 | Интеграция GitHub (403) и Git transport (128) не позволяли запись | Решено авторизованной загрузкой через браузер; runtime-файлы сверены с локальной версией |
-| R02 | Vercel API scope `maximus-fdc6` недоступен (403) | Preview создан Git-интеграцией и имеет status success; подтверждение alias через API остаётся недоступным |
+| R02 | Исторический отказ Vercel API scope `maximus-fdc6` (403) | Доступ через авторизованный браузер восстановлен; текущий production и Preview подтверждены в панели Vercel |
 | R03 | Длинные русские заголовки клуба и privacy вызывали переполнение на 320 px | Исправлены размером шрифта и ограничением grid; слова не разрываются |
 | R04 | Старый переключатель языка возвращал со страницы модели на главную | Исправлены ссылки соответствующих маршрутов |
 | R05 | Старые CSS-файлы v1/v2 остаются историческим исходником, но не включены в order.json | Активная цепочка: fonts.css → arc.css; откат выполняется по commit |
@@ -45,9 +47,9 @@ Production deployment, зарегистрированный GitHub для это
 | R07 | Реальная доставка Resend/Turnstile не вызывалась | Текущий публичный GET /api/contact сообщает mailto; конфигурация и обработчики неизменны |
 | R08 | Текущие права на медиа, статус судов, верфи и коммерческие условия | Сохранены ограничения исходного релиза; дизайн не подтверждает новые права, наличие или готовность |
 | R09 | CLI agent-browser не смог запустить daemon в данной среде | Проверка выполнена непосредственно Playwright + Chromium по реальным локальным HTTP-маршрутам |
-| R10 | Vercel Preview защищён авторизацией | Удалённая браузерная проверка ожидает входа в Vercel; защита не ослаблялась |
+| R10 | Vercel Preview защищён авторизацией | Удалённая браузерная проверка завершена после входа; защита не ослаблялась, для просмотра требуется доступ к проекту |
 
-Доказательства: `arc-browser-qa.json`, `arc-preview-qa.json`, `arc-preservation-audit.json`, `arc-public-baseline.json`, `arc-remote-release.json`, `REDESIGN_ARC.md`; скриншоты — `artifacts/arc/`. Ключи, токены и конфиденциальные исходные PDF не включены в изменения.
+Доказательства: `arc-browser-qa.json`, `arc-preview-qa.json`, `arc-deployed-browser-qa.json`, `arc-preservation-audit.json`, `arc-public-baseline.json`, `arc-remote-release.json`, `REDESIGN_ARC.md`; локальные скриншоты — `artifacts/arc/`, новые скриншоты развёрнутого сайта — MAXIMUS_BOATS_ARC_Preview_EN_20260927.jpg и MAXIMUS_BOATS_ARC_Preview_RU_20260927.jpg. Ключи, токены и конфиденциальные исходные PDF не включены в изменения.
 
 ## Архив: исходный чек-лист v2.0.0
 

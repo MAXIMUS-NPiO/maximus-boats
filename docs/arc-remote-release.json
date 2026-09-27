@@ -6,15 +6,41 @@
   "remoteRuntimeCommit": "ac05da295674c2e38dbae7f1188245760ebe34b0",
   "sourceTreeEqualOutsideDocs": true,
   "deployment": {
-    "id": "3rNKpxkpksNd34Wk58TSR6P64bj9",
-    "githubDeploymentId": 6686505412,
-    "url": "https://maximus-boats-11fudx7pl-maximus-fdc6.vercel.app",
+    "id": "FAFUgcpuYUoxpXMq7c5bnGnmmbLf",
+    "url": "https://maximus-boats-ghm8gk1uq-maximus-fdc6.vercel.app",
     "environment": "Preview",
-    "state": "success",
-    "createdAt": "2026-09-27T01:19:45Z"
+    "state": "Ready",
+    "verifiedDate": "2026-09-27"
   },
-  "remoteBrowserCheck": "BLOCKED_BY_VERCEL_AUTHENTICATION",
+  "remoteBrowserCheck": "PASS_AUTHENTICATED_DESKTOP_12_ROUTES",
   "productionChanged": false,
   "protectionChanged": false,
-  "realEmailSent": false
+  "realEmailSent": false,
+  "deploymentHistory": [
+    {
+      "id": "3rNKpxkpksNd34Wk58TSR6P64bj9",
+      "githubDeploymentId": 6686505412,
+      "url": "https://maximus-boats-11fudx7pl-maximus-fdc6.vercel.app",
+      "environment": "Preview",
+      "state": "success",
+      "createdAt": "2026-09-27T01:19:45Z"
+    }
+  ],
+  "remoteVerifiedCommit": "46bab8118bbbbfcc67b2e9f3372867460b60da45",
+  "branchPreview": {
+    "en": "https://maximus-boats-git-redesign-arc-maximus-fdc6.vercel.app/en/",
+    "ru": "https://maximus-boats-git-redesign-arc-maximus-fdc6.vercel.app/ru/"
+  },
+  "remoteBrowserEvidence": "docs/arc-deployed-browser-qa.json",
+  "productionVerifiedVia": "Authenticated Vercel project dashboard",
+  "productionDeployment": {
+    "id": "J8vo8675eYzcaU55mLaA5t3ZKN5z",
+    "commit": "2a3cd006e0d8a4363fe6f3466d63b025055c4cf1",
+    "state": "Ready",
+    "domains": [
+      "maximus.boats",
+      "www.maximus.boats"
+    ]
+  },
+  "publicationStatus": "AWAITING_OWNER_DESIGN_APPROVAL"
 }

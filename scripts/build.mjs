@@ -26,10 +26,13 @@ export async function build() {
         const part = async (name) => localize(await readFile(join(root, 'src/components', name + '.html'), 'utf8'), locale, values);
         const header = await part('header'), footer = await part('footer'), dialogs = await part('dialogs');
         const output = async (path, title, main) => {
-            let body = header + `<main id="main">${main}</main>` + footer + dialogs;
+            const otherLocale = locale === 'en' ? 'ru' : 'en';
+            const counterpart = path.replace(`/${locale}/`, `/${otherLocale}/`);
+            const routeHeader = header.replace(`id="languageToggle" href="/${otherLocale}/"`, `id="languageToggle" href="${counterpart}"`);
+            let body = `<a class="skip-link" href="#main">${locale === 'ru' ? 'К содержанию' : 'Skip to content'}</a>` + routeHeader + `<main id="main">${main}</main>` + footer + dialogs;
             body = body.replace(/<button\b([^>]*data-project="([^"]+)"[^>]*)>([\s\S]*?)<\/button>/g, (_, attrs, id, inner) => `<a ${attrs.replace(/type="[^"]*"/g, '')} href="/${locale}/projects/${id}/">${inner}</a>`);
             body = body.replace(/href="#([a-zA-Z0-9_-]+)"/g, (match, id) => body.includes(`id="${id}"`) ? match : `href="/${locale}/#${id}"`);
-            const doc = `<!doctype html><html lang="${locale}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#08090a"><meta name="robots" content="${indexable ? 'index,follow' : 'noindex,nofollow'}"><title>${escapeHTML(title)} | MAXIMUS.BOATS</title><meta name="description" content="${locale === 'ru' ? 'Яхты, проектирование, судостроение и модернизация.' : 'Yachts, marine design, shipbuilding and refit.'}">${origin ? `<link rel="canonical" href="${origin}${path}">` : ''}<link rel="stylesheet" href="${cssPath}"><script type="module" src="/assets/client/main.js"></script></head><body>${body}</body></html>`;
+            const doc = `<!doctype html><html lang="${locale}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#031e25"><meta name="robots" content="${indexable ? 'index,follow' : 'noindex,nofollow'}"><title>${escapeHTML(title)} | MAXIMUS.BOATS</title><meta name="description" content="${locale === 'ru' ? 'Яхты, проектирование, судостроение и модернизация.' : 'Yachts, marine design, shipbuilding and refit.'}">${origin ? `<link rel="canonical" href="${origin}${path}">` : ''}<link rel="stylesheet" href="${cssPath}"><script type="module" src="/assets/client/main.js"></script></head><body>${body}</body></html>`;
             const f = join(dist, path, 'index.html');
             await mkdir(resolve(f, '..'), { recursive: true });
             await writeFile(f, doc);

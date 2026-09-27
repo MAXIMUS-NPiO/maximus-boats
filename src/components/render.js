@@ -15,21 +15,21 @@ const specs = entries => `<dl class="collection-specs">${entries.map(([name, val
 
 export function collection(models, locale) {
     const ru = locale === 'ru';
-    const titles = Object.keys(models);
-    const tabs = titles.map((id, i) => `<button type="button" role="tab" id="tab-${id}" data-tab="${id}" aria-selected="${!i}" aria-controls="panel-${id}" tabindex="${i ? -1 : 0}"><span>0${i + 1}</span>${models[id].name}</button>`).join('');
-    const panels = titles.map((id, i) => {
-        const model = models[id], t = model[locale];
-        return `<article class="collection-panel" data-panel="${id}" id="panel-${id}" role="tabpanel" aria-labelledby="tab-${id}" tabindex="0" ${i ? 'hidden' : ''}>
-          <figure class="collection-image"><img src="${model.image}" alt="${model.name} — ${ru ? 'проектная визуализация' : 'project visual'}" loading="lazy"><figcaption>${model.name} / ${ru ? 'ПРОЕКТНАЯ ВИЗУАЛИЗАЦИЯ' : 'PROJECT VISUAL'}</figcaption></figure>
-          <div class="collection-info"><div class="collection-copy"><span class="eyebrow">${escapeHTML(t.subtitle)}</span><h3>${model.name}</h3><p>${escapeHTML(t.description)}</p><a class="button" href="/${locale}/projects/${id}/">${ru ? 'Изучить проект' : 'Explore project'}<span aria-hidden="true" class="arrow">↗</span></a></div>${specs(t.specs.slice(0, 4))}</div>
+    const briefs = {
+        vanuatu: ru ? ['Для экспедиционных маршрутов', 'Парусно-моторная яхта со стальным корпусом. Чертежи, интерьеры и документированные этапы рефита.'] : ['For expedition-minded owners', 'A steel motor-sailer with design drawings, interior material and documented refit stages.'],
+        storm: ru ? ['Для частных морских путешествий', 'Моторная яхта с флайбриджем, тремя каютами с санузлами и открытыми палубами.'] : ['For private voyages', 'A flybridge motor yacht with three en-suite cabins and open deck spaces forward and aft.'],
+        family: ru ? ['Для отдыха с семьёй', 'Стальная моторная яхта с закрытой рубкой, открытыми палубами и индивидуальным оснащением.'] : ['For time with family', 'A steel motor yacht with a covered wheelhouse, open decks and individual outfitting.'],
+        hunter: ru ? ['Для профессиональных задач', 'Многоцелевая платформа deep-V для патрулирования, поиска, спасения и морских операций.'] : ['For professional marine tasks', 'A deep-V multipurpose platform for patrol, search, rescue and marine operations.']
+    };
+    const cards = Object.entries(models).map(([id, model]) => {
+        const t = model[locale], [purpose, description] = briefs[id];
+        const indices = { vanuatu: [0, 1, 2], storm: [0, 2, 4], family: [0, 1, 3], hunter: [0, 1, 7] }[id];
+        return `<article class="yacht-card" id="panel-${id}">
+          <a class="yacht-card-image" href="/${locale}/projects/${id}/" aria-label="${ru ? 'Изучить' : 'Explore'} ${model.name}"><img src="${model.image}" alt="${model.name} — ${ru ? 'проектная визуализация' : 'project visual'}" loading="lazy"><span>${ru ? 'ПРОЕКТ' : 'DESIGN PROJECT'}</span></a>
+          <div class="yacht-card-body"><span class="eyebrow">${purpose}</span><h3>${model.name}</h3><p>${description}</p>${specs(indices.map(i => t.specs[i]))}<div class="card-actions"><a class="text-link" href="/${locale}/projects/${id}/">${ru ? 'Характеристики и материалы' : 'Specifications & details'} <span aria-hidden="true">↗</span></a><a class="text-link" href="#contact" data-select-model="${model.name}">${ru ? 'Обсудить проект' : 'Discuss project'} <span aria-hidden="true">↗</span></a></div></div>
         </article>`;
     }).join('');
-    return `<section class="section" id="projects"><div class="container">
-      <div class="section-heading"><div><span class="eyebrow">01 / ${ru ? 'КОЛЛЕКЦИЯ ПРОЕКТОВ' : 'THE COLLECTION'}</span><h2>${ru ? 'Разный характер.<br>Точный замысел.' : 'Distinct by design.'}</h2></div><p>${ru ? 'Парусно-моторная яхта, частные моторные яхты и многоцелевые катера. Выберите проект под вашу задачу.' : 'Motor sailers. Private yachts. Multipurpose craft. Find the project that matches your purpose.'}</p></div>
-      <div data-tabs><div class="collection-tabs" role="tablist" aria-label="${ru ? 'Выбор модели' : 'Choose a model'}">${tabs}</div>${panels}</div>
-      <p class="collection-note">${ru ? 'Каталожные и проектные параметры. Наличие, окончательная спецификация, цена и сроки передачи подтверждаются индивидуально.' : 'Catalogue and design particulars. Current availability, final specification, price and delivery are confirmed individually.'}</p>
-      <noscript>${titles.map(id => `<a href="/${locale}/projects/${id}/">${models[id].name}</a>`).join(' / ')}</noscript>
-    </div></section>`;
+    return `<section class="section yacht-collection" id="projects" aria-labelledby="collectionTitle"><div class="container"><div class="section-heading"><div><span class="eyebrow">${ru ? 'КОЛЛЕКЦИЯ MAXIMUS' : 'THE MAXIMUS COLLECTION'}</span><h2 id="collectionTitle">${ru ? 'Найдите свою яхту.' : 'Find your kind of yacht.'}</h2></div><p>${ru ? 'Четыре проекта для разных задач. Сравните размеры, планировки и назначение — и обсудите комплектацию под себя.' : 'Four projects. Different ways to be on the water. Compare dimensions, layouts and intended use, then discuss your own configuration.'}</p></div><div class="yacht-grid">${cards}</div><p class="collection-note">${ru ? 'Представлены проектные и каталожные параметры. Актуальная стадия готовности, комплектация, стоимость и сроки согласовываются по запросу.' : 'Design and catalogue particulars are shown. Current project status, configuration, price and schedule are confirmed on enquiry.'}</p></div></section>`;
 }
 
 export function projectPage(model, id, locale) {
@@ -37,7 +37,7 @@ export function projectPage(model, id, locale) {
     const visualLabel = ru ? 'Проектная визуализация' : 'Project visual';
     return `<section class="section detail-section"><div class="container">
       <a href="/${locale}/#projects" class="text-link">← ${ru ? 'Вернуться к коллекции' : 'Back to the collection'}</a>
-      <div class="detail-heading"><div><span class="eyebrow">${escapeHTML(t.subtitle)}</span><h1>${model.name}</h1></div><p>${escapeHTML(t.description)}</p></div>
+      <div class="detail-heading"><div><span class="eyebrow">${escapeHTML(t.subtitle)}</span><h1>${model.name}</h1></div><div class="detail-intro"><p>${escapeHTML(t.description)}</p><a class="button primary" href="#contact" data-select-model="${model.name}">${escapeHTML(t.cta)}<span aria-hidden="true">↗</span></a></div></div>
       <figure><img class="detail-main-img" src="${model.image}" alt="${model.name} / ${visualLabel}" fetchpriority="high"><figcaption class="detail-caption"><span>${model.name} / ${visualLabel}</span><span>${ru ? 'Изображение из проектного досье' : 'From the project dossier'}</span></figcaption></figure>
       <div class="detail-layout"><h2>${ru ? 'Параметры проекта' : 'Project particulars'}</h2>${specs(t.specs)}</div>
       <p class="source-note">${escapeHTML(t.note)}</p>

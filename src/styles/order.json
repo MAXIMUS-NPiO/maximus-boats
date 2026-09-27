@@ -1,16 +1,4 @@
 [
-  "base.css",
-  "navigation.css",
-  "hero.css",
-  "portfolio.css",
-  "case-study.css",
-  "engineering.css",
-  "interiors.css",
-  "services.css",
-  "shipyard.css",
-  "club.css",
-  "faq-and-contact.css",
-  "footer.css",
-  "dialogs.css",
-  "direction-v2.css"
+  "fonts.css",
+  "arc.css"
 ]

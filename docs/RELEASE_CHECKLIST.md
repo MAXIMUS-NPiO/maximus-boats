@@ -1,3 +1,5 @@
+> CURRENT RELEASE UPDATE · 27 September 2026: The owner requested a full commercial audit, immediate corrections and publication. This supersedes the earlier Preview-only/design-approval gate recorded below. The record below is historical. Current scope and evidence: [COMMERCIAL_AUDIT_20260927.md](COMMERCIAL_AUDIT_20260927.md) and [commercial-qa.json](commercial-qa.json). Production status is recorded in the current release evidence; an earlier Preview result must not be presented as publication.
+
 # MAXIMUS BOATS — Arc release checklist
 Статус: КОД СОХРАНЁН В GITHUB; VERCEL PREVIEW ПРОВЕРЕН; ОЖИДАЕТ УТВЕРЖДЕНИЯ ДИЗАЙНА ПЕРЕД PRODUCTION
 Версия: Arc review 3 · Дата: 27 сентября 2026 года

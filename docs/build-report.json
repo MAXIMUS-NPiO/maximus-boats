@@ -1,21 +1,23 @@
 {
-  "version": "2.0.0",
+  "version": "2.1.0",
   "routes": [
     "/en/",
     "/en/projects/vanuatu/",
     "/en/projects/storm/",
     "/en/projects/family/",
     "/en/projects/hunter/",
+    "/en/partnerships/",
     "/en/privacy/",
     "/ru/",
     "/ru/projects/vanuatu/",
     "/ru/projects/storm/",
     "/ru/projects/family/",
     "/ru/projects/hunter/",
+    "/ru/partnerships/",
     "/ru/privacy/"
   ],
   "indexable": false,
-  "canonical": "NOT PROVIDED",
+  "canonical": "https://www.maximus.boats",
   "images": 13,
   "videos": 1,
   "runtimeDependencies": 0

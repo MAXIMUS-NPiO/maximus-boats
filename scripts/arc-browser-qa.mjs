@@ -76,9 +76,8 @@ try {
             assert.deepEqual(overflow.elements, [], `${path} ${width}: clipped element`);
             if (path === `/${locale}/`) {
                 for (const id of Object.keys(models)) {
-                    await page.locator('#tab-' + id).click();
                     assert.ok(await page.locator('#panel-' + id).isVisible());
-                    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${path} ${width} tab ${id}`);
+                    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, `${path} ${width} card ${id}`);
                 }
             }
             routeReport.widths.push(width);
@@ -87,18 +86,9 @@ try {
         if (path === `/${locale}/`) {
             await page.evaluate(() => scrollTo(0, 0));
             await capture(`${locale}-desktop.png`);
-            await page.locator('#tab-vanuatu').click();
-            await page.locator('#tab-vanuatu').focus();
-            await page.keyboard.press('ArrowRight');
-            assert.equal(await page.locator('#tab-storm').getAttribute('aria-selected'), 'true');
-            await page.keyboard.press('Home');
-            await page.locator('#panel-vanuatu .image-expand').click();
-            assert.ok(await page.locator('#galleryDialog').isVisible());
-            await page.keyboard.press('ArrowRight');
-            assert.match(await page.locator('#galleryDialog img').getAttribute('alt'), /STORM/);
-            await page.keyboard.press('Escape');
-            assert.equal(await page.locator('#galleryDialog').isVisible(), false);
-            assert.equal(await page.evaluate(() => document.activeElement.classList.contains('image-expand')), true);
+            assert.equal(await page.locator('.yacht-card').count(), 4);
+            const partnership = page.locator('.sales-hero a[href="/' + locale + '/partnerships/"]');
+            assert.ok(await partnership.isVisible());
             await page.locator('#playVideo').click();
             assert.ok(await page.locator('#videoDialog').isVisible());
             await page.locator('video').evaluate(async video => { video.muted = true; await video.play(); });
@@ -110,7 +100,7 @@ try {
             await page.keyboard.press('ArrowRight');
             assert.match(await page.locator('#galleryDialog img').getAttribute('alt'), locale === 'ru' ? /Каюта/ : /cabin/);
             await page.keyboard.press('Escape');
-            report.checks.push({ locale, tabsAndKeyboard: true, galleryNavigationAndFocus: true, sourceVideoPlaybackAndPause: true, interiorGallery: true });
+            report.checks.push({ locale, visibleYachtCollection: true, investorEntry: true, sourceVideoPlaybackAndPause: true, interiorGallery: true });
         }
         if (path.includes('/projects/')) {
             const id = path.split('/')[3];

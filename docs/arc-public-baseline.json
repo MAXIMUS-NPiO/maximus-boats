@@ -1,0 +1,21 @@
+{
+  "status": "PUBLIC VERSION UNCHANGED BY THIS WORK",
+  "baselineCommit": "2a3cd006e0d8a4363fe6f3466d63b025055c4cf1",
+  "deployment": "https://maximus-boats-mbnejiny9-maximus-fdc6.vercel.app",
+  "pages": [
+    {
+      "url": "https://www.maximus.boats/en/",
+      "httpStatus": 200,
+      "css": "/assets/site.8f548691d6.css",
+      "sha256": "718658ed4bda0322c126232641f9ed0c4ef75dcb22302a8035df31c7ef1df22e",
+      "enMatchesInitialSnapshot": true
+    },
+    {
+      "url": "https://www.maximus.boats/ru/",
+      "httpStatus": 200,
+      "css": "/assets/site.8f548691d6.css",
+      "sha256": "fd97a9360d58c9becebb6d6cc6e391baad6fe274f258c6dc56adf2009275c802",
+      "enMatchesInitialSnapshot": null
+    }
+  ]
+}

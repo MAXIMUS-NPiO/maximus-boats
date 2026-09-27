@@ -1,0 +1,250 @@
+{
+  "method": "Real local HTTP routes and original media, headless Chromium; API forced to existing mailto mode; all non-GET and external requests blocked.",
+  "node": "v22.23.3",
+  "browser": "153.0.8010.0",
+  "pages": [
+    {
+      "route": "/en/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 10
+    },
+    {
+      "route": "/en/projects/vanuatu/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 2
+    },
+    {
+      "route": "/en/projects/storm/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 2
+    },
+    {
+      "route": "/en/projects/family/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 1
+    },
+    {
+      "route": "/en/projects/hunter/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 2
+    },
+    {
+      "route": "/en/privacy/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 0
+    },
+    {
+      "route": "/ru/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 10
+    },
+    {
+      "route": "/ru/projects/vanuatu/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 2
+    },
+    {
+      "route": "/ru/projects/storm/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 2
+    },
+    {
+      "route": "/ru/projects/family/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 1
+    },
+    {
+      "route": "/ru/projects/hunter/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 2
+    },
+    {
+      "route": "/ru/privacy/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 0
+    }
+  ],
+  "checks": [
+    {
+      "locale": "en",
+      "tabsAndKeyboard": true,
+      "galleryNavigationAndFocus": true,
+      "sourceVideoPlaybackAndPause": true,
+      "interiorGallery": true
+    },
+    {
+      "route": "/en/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    },
+    {
+      "route": "/en/projects/vanuatu/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    },
+    {
+      "route": "/en/projects/storm/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    },
+    {
+      "route": "/en/projects/family/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    },
+    {
+      "route": "/en/projects/hunter/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    },
+    {
+      "locale": "ru",
+      "tabsAndKeyboard": true,
+      "galleryNavigationAndFocus": true,
+      "sourceVideoPlaybackAndPause": true,
+      "interiorGallery": true
+    },
+    {
+      "route": "/ru/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    },
+    {
+      "route": "/ru/projects/vanuatu/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    },
+    {
+      "route": "/ru/projects/storm/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    },
+    {
+      "route": "/ru/projects/family/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    },
+    {
+      "route": "/ru/projects/hunter/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "blockedRequests": [],
+  "screenshots": [
+    "artifacts/arc/en-desktop.png",
+    "artifacts/arc/en-mobile.png",
+    "artifacts/arc/en-mobile-full.png",
+    "artifacts/arc/en-desktop.png",
+    "artifacts/arc/en-desktop-full.png",
+    "artifacts/arc/en-projects-section.png",
+    "artifacts/arc/en-engineering-section.png",
+    "artifacts/arc/en-interiors-section.png",
+    "artifacts/arc/en-contact-section.png",
+    "artifacts/arc/en-vanuatu-desktop.png",
+    "artifacts/arc/en-storm-desktop.png",
+    "artifacts/arc/en-family-desktop.png",
+    "artifacts/arc/en-hunter-desktop.png",
+    "artifacts/arc/ru-desktop.png",
+    "artifacts/arc/ru-mobile.png",
+    "artifacts/arc/ru-mobile-full.png",
+    "artifacts/arc/ru-desktop.png",
+    "artifacts/arc/ru-desktop-full.png",
+    "artifacts/arc/ru-projects-section.png",
+    "artifacts/arc/ru-engineering-section.png",
+    "artifacts/arc/ru-interiors-section.png",
+    "artifacts/arc/ru-contact-section.png",
+    "artifacts/arc/ru-vanuatu-desktop.png",
+    "artifacts/arc/ru-storm-desktop.png",
+    "artifacts/arc/ru-family-desktop.png",
+    "artifacts/arc/ru-hunter-desktop.png"
+  ],
+  "internalLinksChecked": 46,
+  "result": "PASS"
+}

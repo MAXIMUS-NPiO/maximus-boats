@@ -1,0 +1,284 @@
+{
+  "result": "PASS",
+  "date": "2026-09-27",
+  "testedCommit": "46bab8118bbbbfcc67b2e9f3372867460b60da45",
+  "runtimeCommit": "ac05da295674c2e38dbae7f1188245760ebe34b0",
+  "deploymentId": "FAFUgcpuYUoxpXMq7c5bnGnmmbLf",
+  "deploymentURL": "https://maximus-boats-ghm8gk1uq-maximus-fdc6.vercel.app",
+  "branchPreviewEN": "https://maximus-boats-git-redesign-arc-maximus-fdc6.vercel.app/en/",
+  "branchPreviewRU": "https://maximus-boats-git-redesign-arc-maximus-fdc6.vercel.app/ru/",
+  "viewport": {
+    "width": 1363,
+    "height": 936
+  },
+  "routes": [
+    {
+      "headings": [
+        "Your vision.Our craft."
+      ],
+      "height": 936,
+      "images": [
+        {
+          "complete": true,
+          "src": "/media/hero-vanuatu.9adc574216.webp",
+          "width": 1806
+        },
+        {
+          "complete": true,
+          "src": "/media/vanuatu-render.634073d4bc.webp",
+          "width": 1035
+        },
+        {
+          "complete": false,
+          "src": "/media/storm-render.35ef3483e6.webp",
+          "width": 0
+        },
+        {
+          "complete": false,
+          "src": "/media/family-render.3aad4c1d75.webp",
+          "width": 0
+        },
+        {
+          "complete": false,
+          "src": "/media/hunter-render.b4edac926c.webp",
+          "width": 0
+        },
+        {
+          "complete": false,
+          "src": "/media/engineering-cad.9aaa3c1c60.webp",
+          "width": 0
+        },
+        {
+          "complete": false,
+          "src": "/media/vanuatu-side.31562ecefc.webp",
+          "width": 1280
+        },
+        {
+          "complete": false,
+          "src": "/media/vanuatu-salon.db42fd8265.webp",
+          "width": 0
+        },
+        {
+          "complete": false,
+          "src": "/media/vanuatu-cabin.552e45793a.webp",
+          "width": 0
+        },
+        {
+          "complete": false,
+          "src": "/media/shipyard-exterior.9b83af95a4.webp",
+          "width": 0
+        },
+        {
+          "complete": true,
+          "src": null,
+          "width": 0
+        }
+      ],
+      "lang": "en",
+      "mipa": true,
+      "scrollWidth": 1348,
+      "title": "Yachts & marine engineering | MAXIMUS.BOATS",
+      "url": "https://maximus-boats-ghm8gk1uq-maximus-fdc6.vercel.app/en/",
+      "width": 1363
+    },
+    {
+      "brokenImages": [],
+      "headings": [
+        "Ваш характер.Ваша яхта."
+      ],
+      "height": 936,
+      "lang": "ru",
+      "languageHref": "/en/",
+      "loadedImages": 9,
+      "mipa": true,
+      "scrollWidth": 1348,
+      "title": "Яхты и судостроение | MAXIMUS.BOATS",
+      "url": "https://maximus-boats-ghm8gk1uq-maximus-fdc6.vercel.app/ru/",
+      "width": 1363
+    },
+    {
+      "brokenImages": [],
+      "headings": [
+        "VANUATU"
+      ],
+      "height": 936,
+      "lang": "en",
+      "languageHref": "/ru/projects/vanuatu/",
+      "loadedImages": 2,
+      "mipa": true,
+      "scrollWidth": 1348,
+      "title": "VANUATU | MAXIMUS.BOATS",
+      "url": "https://maximus-boats-ghm8gk1uq-maximus-fdc6.vercel.app/en/projects/vanuatu/",
+      "width": 1363
+    },
+    {
+      "brokenImages": [],
+      "headings": [
+        "VANUATU"
+      ],
+      "height": 936,
+      "lang": "ru",
+      "languageHref": "/en/projects/vanuatu/",
+      "loadedImages": 2,
+      "mipa": true,
+      "scrollWidth": 1348,
+      "title": "VANUATU | MAXIMUS.BOATS",
+      "url": "https://maximus-boats-ghm8gk1uq-maximus-fdc6.vercel.app/ru/projects/vanuatu/",
+      "width": 1363
+    },
+    {
+      "brokenImages": [],
+      "headings": [
+        "STORM"
+      ],
+      "height": 936,
+      "lang": "en",
+      "languageHref": "/ru/projects/storm/",
+      "loadedImages": 1,
+      "mipa": true,
+      "scrollWidth": 1348,
+      "title": "STORM | MAXIMUS.BOATS",
+      "url": "https://maximus-boats-ghm8gk1uq-maximus-fdc6.vercel.app/en/projects/storm/",
+      "width": 1363
+    },
+    {
+      "brokenImages": [],
+      "headings": [
+        "STORM"
+      ],
+      "height": 936,
+      "lang": "ru",
+      "languageHref": "/en/projects/storm/",
+      "loadedImages": 2,
+      "mipa": true,
+      "scrollWidth": 1348,
+      "title": "STORM | MAXIMUS.BOATS",
+      "url": "https://maximus-boats-ghm8gk1uq-maximus-fdc6.vercel.app/ru/projects/storm/",
+      "width": 1363
+    },
+    {
+      "brokenImages": [],
+      "headings": [
+        "FAMILY"
+      ],
+      "height": 936,
+      "lang": "en",
+      "languageHref": "/ru/projects/family/",
+      "loadedImages": 1,
+      "mipa": true,
+      "scrollWidth": 1348,
+      "title": "FAMILY | MAXIMUS.BOATS",
+      "url": "https://maximus-boats-ghm8gk1uq-maximus-fdc6.vercel.app/en/projects/family/",
+      "width": 1363
+    },
+    {
+      "brokenImages": [],
+      "headings": [
+        "FAMILY"
+      ],
+      "height": 936,
+      "lang": "ru",
+      "languageHref": "/en/projects/family/",
+      "loadedImages": 1,
+      "mipa": true,
+      "scrollWidth": 1348,
+      "title": "FAMILY | MAXIMUS.BOATS",
+      "url": "https://maximus-boats-ghm8gk1uq-maximus-fdc6.vercel.app/ru/projects/family/",
+      "width": 1363
+    },
+    {
+      "brokenImages": [],
+      "headings": [
+        "HUNTER"
+      ],
+      "height": 936,
+      "lang": "en",
+      "languageHref": "/ru/projects/hunter/",
+      "loadedImages": 2,
+      "mipa": true,
+      "scrollWidth": 1348,
+      "title": "HUNTER | MAXIMUS.BOATS",
+      "url": "https://maximus-boats-ghm8gk1uq-maximus-fdc6.vercel.app/en/projects/hunter/",
+      "width": 1363
+    },
+    {
+      "brokenImages": [],
+      "headings": [
+        "HUNTER"
+      ],
+      "height": 936,
+      "lang": "ru",
+      "languageHref": "/en/projects/hunter/",
+      "loadedImages": 2,
+      "mipa": true,
+      "scrollWidth": 1348,
+      "title": "HUNTER | MAXIMUS.BOATS",
+      "url": "https://maximus-boats-ghm8gk1uq-maximus-fdc6.vercel.app/ru/projects/hunter/",
+      "width": 1363
+    },
+    {
+      "brokenImages": [],
+      "headings": [
+        "Privacy notice."
+      ],
+      "height": 936,
+      "lang": "en",
+      "languageHref": "/ru/privacy/",
+      "loadedImages": 0,
+      "mipa": true,
+      "scrollWidth": 1348,
+      "title": "Privacy | MAXIMUS.BOATS",
+      "url": "https://maximus-boats-ghm8gk1uq-maximus-fdc6.vercel.app/en/privacy/",
+      "width": 1363
+    },
+    {
+      "brokenImages": [],
+      "headings": [
+        "Конфиденциальность."
+      ],
+      "height": 936,
+      "lang": "ru",
+      "languageHref": "/en/privacy/",
+      "loadedImages": 0,
+      "mipa": true,
+      "scrollWidth": 1348,
+      "title": "Конфиденциальность | MAXIMUS.BOATS",
+      "url": "https://maximus-boats-ghm8gk1uq-maximus-fdc6.vercel.app/ru/privacy/",
+      "width": 1363
+    }
+  ],
+  "interactions": {
+    "menu": "PASS",
+    "fourModelTabs": "PASS",
+    "galleryPreviousAndEscape": "PASS",
+    "sameProjectLanguageSwitch": "PASS",
+    "video": {
+      "currentTime": 8.359184,
+      "duration": 8.359184,
+      "paused": true,
+      "readyState": 4
+    },
+    "videoAfterClose": {
+      "currentTime": 8.359184,
+      "paused": true
+    },
+    "emptyFormValidation": "PASS",
+    "copyEnquiry": "Enquiry copied. Nothing sent.",
+    "realEmailSent": false
+  },
+  "console": {
+    "siteWarningsAndErrors": [],
+    "excluded": "Browser extension metadata errors (chrome-extension://); not application errors"
+  },
+  "production": {
+    "changed": false,
+    "commit": "2a3cd006e0d8a4363fe6f3466d63b025055c4cf1",
+    "deploymentId": "J8vo8675eYzcaU55mLaA5t3ZKN5z",
+    "domain": "https://www.maximus.boats"
+  },
+  "protectionChanged": false,
+  "limits": [
+    "Authenticated cloud Chromium desktop check; prior local responsive checks cover six widths. Physical Safari/iOS/Android not tested.",
+    "No actual delivery through email provider tested."
+  ]
+}

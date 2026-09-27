@@ -1,0 +1,51 @@
+{
+  "result": "PASS",
+  "node": "22.23.3",
+  "routes": [
+    "/en/",
+    "/en/projects/vanuatu/",
+    "/en/projects/storm/",
+    "/en/projects/family/",
+    "/en/projects/hunter/",
+    "/en/partnerships/",
+    "/en/privacy/",
+    "/ru/",
+    "/ru/projects/vanuatu/",
+    "/ru/projects/storm/",
+    "/ru/projects/family/",
+    "/ru/projects/hunter/",
+    "/ru/partnerships/",
+    "/ru/privacy/"
+  ],
+  "internalLinksAndAnchors": 56,
+  "productionIndexable": true,
+  "canonicalAndHreflang": true,
+  "socialMetadata": true,
+  "modelSpecificationsAndMediaUnchanged": true,
+  "backendAndSecurityUnchanged": true,
+  "yachtsVisibleWithoutInteraction": 4,
+  "tests": 61,
+  "previewRemainsNoindex": true,
+  "deployedBrowser": {
+    "result": "PASS",
+    "environment": "authenticated Vercel Preview",
+    "baseUrl": "https://maximus-boats-git-redesign-arc-maximus-fdc6.vercel.app",
+    "viewport": {
+      "width": 1363,
+      "height": 936
+    },
+    "routesChecked": 14,
+    "horizontalOverflow": false,
+    "oneH1PerRoute": true,
+    "languageCounterparts": true,
+    "fourVisibleYachtCards": true,
+    "partnerCTASelectsShipyard": true,
+    "modelCTASelectsSTORM": true,
+    "shipyardGalleryOpenAndEscape": true,
+    "applicationConsoleErrors": [],
+    "physicalMobileDevicesTested": false,
+    "responsiveBrowserWidthsTested": [
+      1363
+    ]
+  }
+}

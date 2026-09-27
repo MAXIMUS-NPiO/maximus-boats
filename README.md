@@ -1,5 +1,5 @@
 # MAXIMUS.BOATS
-Статус: FINAL SOURCE PACKAGE · Версия: 2.0.0 · Дата: 26 сентября 2026 года
+Статус: COMMERCIAL SITE RELEASE · Версия: 2.1.0 · Дата: 27 сентября 2026 года
 
 Отдельный проект лендинга для GitHub и Vercel. Исходники, компоненты, контент, стили, браузерная логика и серверный обработчик разделены. Удалены декоративные звёздочки. Использованы только изображения и видео из предоставленных sources. Коммерческие контакты и ссылка на инвестиционный клуб сохранены.
 
@@ -34,20 +34,20 @@ vercel.json            Настройки сборки и функции
 Стек: предрендеренный HTML, CSS, JavaScript ES modules, Node.js. Это не React/Next.js проект. Компоненты собираются в реальные документы, а не в одностраничный клиентский роутер.
 
 ## Редактирование
-Контакты: `src/content/site.js`. Данные четырёх моделей: `src/content/projects.json`. Общие блоки: `src/components/*.html`. Переводы текстовых элементов хранятся в атрибутах data-en/data-ru и разрешаются при сборке. Внешний вид: `src/styles/direction-v2.css`; порядок подключения — `src/styles/order.json`.
+Контакты: `src/content/site.js`. Данные четырёх моделей: `src/content/projects.json`. Общие блоки: `src/components/*.html`. Переводы текстовых элементов хранятся в атрибутах data-en/data-ru и разрешаются при сборке. Внешний вид ветки Arc: `src/styles/arc.css`, локальные шрифты — `src/styles/fonts.css`; порядок подключения — `src/styles/order.json`.
 
 ## Публикация на Vercel
 Загрузите содержимое этой папки в корень репозитория, сохранив скрытые файлы `.github`, `.gitignore`, `.env.example`, `.nvmrc`. Рекомендуется первоначально закрытый репозиторий.
 Framework preset: Other. Node.js: 22.x. Build: `npm run build`. Output directory: `dist`. Install: `npm ci --ignore-scripts`. Настройки записаны в `vercel.json`.
 Не загружайте один файл превью вместо проекта. Не переносите `api/contact.js` в `dist`. Не добавляйте SPA-rewrite всех URL на index.html: страницы имеют собственные маршруты.
-Репозиторий GitHub: NOT PROVIDED. Проект Vercel: NOT PROVIDED. Публичный домен: NOT PROVIDED. Удалённая публикация в рамках подготовки пакета не выполнялась.
+Репозиторий GitHub: https://github.com/MAXIMUS-NPiO/maximus-boats. Vercel: maximus-fdc6 / maximus-boats. Публичный домен: https://www.maximus.boats. Статус ветки Arc и ограничения публикации: `docs/RELEASE_CHECKLIST.md`. Публичная версия не заменяется созданием локального превью.
 
 ## Форма
 По умолчанию `CONTACT_MODE=mailto`: письмо открывается в почтовом приложении посетителя, отправку выполняет посетитель. Есть копирование подготовленного текста. Приложение не сохраняет запросы в базу данных.
 Опциональная серверная отправка реализована через Resend и Cloudflare Turnstile. Для неё необходимы заполненные переменные из `.env.example`, проверенный отправитель и разрешённые origins. Ключи и аккаунты не создавались. Успех API означает принятие почтовым провайдером, а не гарантированную доставку во входящие. Перед включением публичной серверной формы настройте инфраструктурное ограничение частоты запросов.
 
 ## Индексация
-Индексация выключена по умолчанию. После утверждения домена и содержания задайте `SITE_URL` и `PUBLIC_INDEXABLE=true`. Noindex не является защитой доступа к конфиденциальному превью.
+Публичная сборка Vercel Production индексируется. Canonical-домен: `https://www.maximus.boats`; `SITE_URL` позволяет задать другой подтверждённый домен. Vercel Preview всегда остаётся noindex, даже при `PUBLIC_INDEXABLE=true`. Для локальной проверки индексируемой сборки задайте `PUBLIC_INDEXABLE=true`. Noindex не заменяет авторизацию Preview.
 
 ## Превью и проверки
 ```sh
@@ -55,7 +55,7 @@ npm run build
 npm run export:preview
 ```
 Создаётся `artifacts/MAXIMUS_BOATS_PREVIEW.html` — автономное превью со встроенными медиа, двумя языками и переходами между страницами моделей. Это просмотрная копия, не замена исходников.
-`npm run check:all`: проверка синтаксиса, 61 тест, SHA-256 медиа и сборка 12 локализованных страниц, корневой страницы и 404.
+`npm run check:all`: проверка синтаксиса, 61 тест, SHA-256 медиа и сборка 14 локализованных страниц, корневой страницы и 404.
 Опционально: `python scripts/browser-qa.py --chromium /usr/bin/chromium`. Для этой проверки нужны Python, Playwright и Chromium; они не являются зависимостями сайта.
 
 ## Источники и IP
@@ -64,3 +64,11 @@ MIPA обозначена для IP-обращений. Запись в реес
 
 ## Автономное интерактивное превью
 After building, run `npm run export:preview`. This creates `artifacts/MAXIMUS_BOATS_PREVIEW.html`, containing the built EN/RU pages, images, video and browser interactions in one file. This viewing artifact is not the production repository or API deployment. Use the regular source and `vercel.json` for GitHub/Vercel.
+
+## Arc review — 27 September 2026
+The active stylesheet order is `fonts.css`, `arc.css`, then `conversion.css`. Historical CSS files are retained but are not bundled. Original images, video, project specifications, public contacts, form backend and security configuration are unchanged. The Inter variable Latin/Cyrillic fonts are bundled under SIL OFL (`public/fonts/LICENSE.txt`).
+
+Optional real-HTTP browser QA: install Playwright separately, then run `node scripts/arc-browser-qa.mjs`. `PLAYWRIGHT_MODULE` and `BROWSER_EXECUTABLE` can point to local QA tooling. The script starts a local mailto-only server, blocks external/non-GET browser traffic, and writes the report and screenshots. This tooling is not a production dependency.
+
+## Commercial audit — 27 September 2026
+The current release adds a direct yacht proposition, four visible yacht cards, dedicated EN/RU investor and partner routes, clearer project CTAs, the client discussion process, and production SEO. See `docs/COMMERCIAL_AUDIT_20260927.md` for findings, source boundaries and release evidence. The owner explicitly requested immediate correction and publication; the earlier Preview-only approval gate is superseded.

@@ -1,0 +1,195 @@
+{
+  "baseline": "2a3cd006e0d8a4363fe6f3466d63b025055c4cf1",
+  "result": "PASS",
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "ed5ac88256c5f8437efe0e37b6306278f0f8c4925da2381029462cecc3223001",
+      "unchanged": true
+    },
+    {
+      "path": ".nvmrc",
+      "sha256": "f14b4987904bcb5814e4459a057ed4d20f58a633152288a761214dcd28780b56",
+      "unchanged": true
+    },
+    {
+      "path": "api/contact.js",
+      "sha256": "759812fc356a1979ba725604870e49ab0db61f1d80321a183a285e4dbb5cc436",
+      "unchanged": true
+    },
+    {
+      "path": "docs/asset-manifest.json",
+      "sha256": "b92ed661aa7cbf455ab70c0c8b2f75402d412b1d005baaca85c7f1f85f57adc7",
+      "unchanged": true
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "8f60f11b469d5ab6364a08d480d4218767f0e4af5d13722f8148238794040d1c",
+      "unchanged": true
+    },
+    {
+      "path": "package.json",
+      "sha256": "e632f82ae013c4a34d654b8aadc13fa1ee7735adae98d2b40e8b7a9388c6863b",
+      "unchanged": true
+    },
+    {
+      "path": "public/media/engineering-cad.9aaa3c1c60.webp",
+      "sha256": "9aaa3c1c60ea025397642363853b83c8ec139998e6b1e8d1cbc6e3e096edf572",
+      "unchanged": true
+    },
+    {
+      "path": "public/media/family-render.3aad4c1d75.webp",
+      "sha256": "3aad4c1d757e30afc0ab44d46b28ffb3a8518dfa5f1407f68235113b9a39681f",
+      "unchanged": true
+    },
+    {
+      "path": "public/media/hero-vanuatu.9adc574216.webp",
+      "sha256": "9adc5742168827e9ddf4d75eaae5a057d4ecad0ab1c6793f8afd16dea4605e8b",
+      "unchanged": true
+    },
+    {
+      "path": "public/media/hunter-patrol.cdd8d6de17.webp",
+      "sha256": "cdd8d6de173db05dc5c9682695eed0d5b1b64b0e8a2331cf36c23c306c8e8fbe",
+      "unchanged": true
+    },
+    {
+      "path": "public/media/hunter-render.b4edac926c.webp",
+      "sha256": "b4edac926cfba78514bcf8d7065d123c915e2ed86729c85ea925d763ca7a6d90",
+      "unchanged": true
+    },
+    {
+      "path": "public/media/shipyard-exterior.9b83af95a4.webp",
+      "sha256": "9b83af95a45309ae1f85537de36c713fdee3f3b5582dd99e472f9be0ca7e46d9",
+      "unchanged": true
+    },
+    {
+      "path": "public/media/storm-render.35ef3483e6.webp",
+      "sha256": "35ef3483e692fc219a2780d0d1fe1240f5816cad41875e019dd11ede5aa3a7af",
+      "unchanged": true
+    },
+    {
+      "path": "public/media/storm-structure.ea1e325280.webp",
+      "sha256": "ea1e325280ba5a98c9d9cd5ccc253b5a539bbf5b6efbce21b44d7dec6cf86a65",
+      "unchanged": true
+    },
+    {
+      "path": "public/media/vanuatu-cabin.552e45793a.webp",
+      "sha256": "552e45793aeb5b40811b02c2e6e7796d3040b2b09c524ec4c9e5be75ab440f3a",
+      "unchanged": true
+    },
+    {
+      "path": "public/media/vanuatu-plans.bb210569fb.webp",
+      "sha256": "bb210569fb2852de1b971eefcaa145f933faadbdd1ae51c4ba2ff9ae81d9c33f",
+      "unchanged": true
+    },
+    {
+      "path": "public/media/vanuatu-render.634073d4bc.webp",
+      "sha256": "634073d4bccfc7b936d296b0204ead1bcefea4af0607a25e784c5d43d3c901b3",
+      "unchanged": true
+    },
+    {
+      "path": "public/media/vanuatu-salon.db42fd8265.webp",
+      "sha256": "db42fd82658cc7f6d0e73994864dfa2d3366508da2f1dd6d9a6351d7bab9dcec",
+      "unchanged": true
+    },
+    {
+      "path": "public/media/vanuatu-side.31562ecefc.webp",
+      "sha256": "31562ecefcfd2835dfdfa05e1aea89fbc421eedc58db98968d0b4af83953ad8e",
+      "unchanged": true
+    },
+    {
+      "path": "public/media/vanuatu-workshop.24b2434318.mp4",
+      "sha256": "24b243431871bb179f0ce0f362ed536173a5b94d1e1c9cc9f6eb44838d1689f3",
+      "unchanged": true
+    },
+    {
+      "path": "server/config.js",
+      "sha256": "5ea9cd54ab4a3902d5e23186a73f09b5625ee4c3731cb71cace060eb2b249a0c",
+      "unchanged": true
+    },
+    {
+      "path": "server/contact-handler.js",
+      "sha256": "3ff583dca4792bf70f6b52fc694231afe16b26353b8ce5c8116f11eb195bb7d4",
+      "unchanged": true
+    },
+    {
+      "path": "server/services/mail.js",
+      "sha256": "beed2dc596eedf5e1afc4126f88b60539b390cdf632aaaf8ad87661cea236633",
+      "unchanged": true
+    },
+    {
+      "path": "server/services/turnstile.js",
+      "sha256": "49c61deae65bbb5d782a08193341206988a4f79cb2ce1682f89b772963f76af9",
+      "unchanged": true
+    },
+    {
+      "path": "shared/inquiry.js",
+      "sha256": "a07ab08d449638488242dc2b632552f25b05638de73728462f650b07f7cc1f74",
+      "unchanged": true
+    },
+    {
+      "path": "src/client/modules/enquiry.js",
+      "sha256": "4880a9719e8dd75eefd1c3e506a439edc88e7419163ceb757908642878f24289",
+      "unchanged": true
+    },
+    {
+      "path": "src/components/club.html",
+      "sha256": "907289f248bd66bea6eb581783f51221f2235e5ef75b1c4cb876b252fd450164",
+      "unchanged": true
+    },
+    {
+      "path": "src/components/engineering.html",
+      "sha256": "c237834a8caba8aa82636e2a6bc926b49c12e8fca76fcc664ab65b085b381626",
+      "unchanged": true
+    },
+    {
+      "path": "src/components/interiors.html",
+      "sha256": "33165633e6e5c3915ab912d4e2758967bb322ee922732e8900b0cc23b470077f",
+      "unchanged": true
+    },
+    {
+      "path": "src/components/questions.html",
+      "sha256": "c4a790d653c38e061bb00ea747019a7a3a281b880503b37aa4fa5fb5cfb156e3",
+      "unchanged": true
+    },
+    {
+      "path": "src/components/services.html",
+      "sha256": "8abb6e5f1804ff9a6827c74ae1a3b4dc32f3eb94e0196721d0c4456682dea97c",
+      "unchanged": true
+    },
+    {
+      "path": "src/components/shipyard.html",
+      "sha256": "b7d22d7e1fbde4e89e15c36da8015120ff429e4255c50c9e3cc32ba1ffa1f9fc",
+      "unchanged": true
+    },
+    {
+      "path": "src/components/vanuatu.html",
+      "sha256": "df25a7f4b649a950694bf5d8b29137f0cb9d7f665cb2f44b4bc239771fd274cc",
+      "unchanged": true
+    },
+    {
+      "path": "src/content/media.json",
+      "sha256": "a0adc8930c10e2207ba2341572aac49ac34f3cbe3c28402ee1de97d19e39e02c",
+      "unchanged": true
+    },
+    {
+      "path": "src/content/projects.json",
+      "sha256": "9af17a3d8de63ed00141f426d04d6f7fd959575fdbd74f3126571bc7c436de5e",
+      "unchanged": true
+    },
+    {
+      "path": "src/content/site.js",
+      "sha256": "7c5423961a4bcb86d7968eb75621040e486e05842d9a6d3dfbc3574236b6d751",
+      "unchanged": true
+    },
+    {
+      "path": "vercel.json",
+      "sha256": "a3cd253e12d02435c6aa2cda6b62bc9395dd75859b723982803ebb129b659ff7",
+      "unchanged": true
+    }
+  ],
+  "count": 37,
+  "newMedia": 0,
+  "retouchedMedia": 0,
+  "generatedMedia": 0
+}

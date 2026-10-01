@@ -1,0 +1,7 @@
+{
+  "result": "PASS",
+  "checks": [
+    "Scroll crossfade at 0%, 50%, 100%; original gallery; Escape restores focus; reduced motion changes live",
+    "English and Russian content, links and photographs remain available without JavaScript"
+  ]
+}

@@ -8,7 +8,7 @@ Protection arises without registration. Under the Berne Convention, in force for
 
 ## Commit signing
 
-From 1 October 2026 commits published here are signed with an ed25519 key held only on the author's own computer, and GitHub shows them as Verified. Commits made before that date are unsigned and are left as they are.
+The author-attribution release of 1 October 2026 was signed with an ed25519 key and is marked Verified on GitHub. Releases may also be signed by GitHub through its authenticated commit API. The signature and verification status of each commit can be inspected in the repository. Earlier unsigned commits are left as they are.
 
 ## Trade marks
 

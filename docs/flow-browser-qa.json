@@ -1,0 +1,284 @@
+{
+  "method": "Real local HTTP routes and original media, headless Chromium; API forced to existing mailto mode; all non-GET and external requests blocked.",
+  "node": "v24.15.0",
+  "browser": "154.0.8037.58",
+  "pages": [
+    {
+      "route": "/en/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 10
+    },
+    {
+      "route": "/en/projects/vanuatu/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 2
+    },
+    {
+      "route": "/en/projects/storm/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 2
+    },
+    {
+      "route": "/en/projects/family/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 1
+    },
+    {
+      "route": "/en/projects/hunter/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 2
+    },
+    {
+      "route": "/en/partnerships/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 1
+    },
+    {
+      "route": "/en/privacy/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 0
+    },
+    {
+      "route": "/ru/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 10
+    },
+    {
+      "route": "/ru/projects/vanuatu/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 2
+    },
+    {
+      "route": "/ru/projects/storm/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 2
+    },
+    {
+      "route": "/ru/projects/family/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 1
+    },
+    {
+      "route": "/ru/projects/hunter/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 2
+    },
+    {
+      "route": "/ru/partnerships/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 1
+    },
+    {
+      "route": "/ru/privacy/",
+      "widths": [
+        320,
+        390,
+        768,
+        1024,
+        1440,
+        1920
+      ],
+      "images": 0
+    }
+  ],
+  "checks": [
+    {
+      "locale": "en",
+      "visibleYachtCollection": true,
+      "investorEntry": true,
+      "sourceVideoPlaybackAndPause": true,
+      "interiorGallery": true
+    },
+    {
+      "route": "/en/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    },
+    {
+      "route": "/en/projects/vanuatu/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    },
+    {
+      "route": "/en/projects/storm/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    },
+    {
+      "route": "/en/projects/family/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    },
+    {
+      "route": "/en/projects/hunter/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    },
+    {
+      "route": "/en/partnerships/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    },
+    {
+      "locale": "ru",
+      "visibleYachtCollection": true,
+      "investorEntry": true,
+      "sourceVideoPlaybackAndPause": true,
+      "interiorGallery": true
+    },
+    {
+      "route": "/ru/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    },
+    {
+      "route": "/ru/projects/vanuatu/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    },
+    {
+      "route": "/ru/projects/storm/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    },
+    {
+      "route": "/ru/projects/family/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    },
+    {
+      "route": "/ru/projects/hunter/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    },
+    {
+      "route": "/ru/partnerships/",
+      "formValidationAndCopy": true,
+      "realSubmission": false
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [],
+  "blockedRequests": [],
+  "screenshots": [
+    "artifacts/flow/en-desktop.png",
+    "artifacts/flow/en-mobile.png",
+    "artifacts/flow/en-mobile-full.png",
+    "artifacts/flow/en-desktop.png",
+    "artifacts/flow/en-desktop-full.png",
+    "artifacts/flow/en-projects-section.png",
+    "artifacts/flow/en-engineering-section.png",
+    "artifacts/flow/en-interiors-section.png",
+    "artifacts/flow/en-contact-section.png",
+    "artifacts/flow/en-vanuatu-desktop.png",
+    "artifacts/flow/en-storm-desktop.png",
+    "artifacts/flow/en-family-desktop.png",
+    "artifacts/flow/en-hunter-desktop.png",
+    "artifacts/flow/ru-desktop.png",
+    "artifacts/flow/ru-mobile.png",
+    "artifacts/flow/ru-mobile-full.png",
+    "artifacts/flow/ru-desktop.png",
+    "artifacts/flow/ru-desktop-full.png",
+    "artifacts/flow/ru-projects-section.png",
+    "artifacts/flow/ru-engineering-section.png",
+    "artifacts/flow/ru-interiors-section.png",
+    "artifacts/flow/ru-contact-section.png",
+    "artifacts/flow/ru-vanuatu-desktop.png",
+    "artifacts/flow/ru-storm-desktop.png",
+    "artifacts/flow/ru-family-desktop.png",
+    "artifacts/flow/ru-hunter-desktop.png"
+  ],
+  "internalLinksChecked": 59,
+  "result": "PASS"
+}

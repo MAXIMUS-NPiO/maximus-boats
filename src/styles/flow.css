@@ -1,0 +1,371 @@
+/* Continuous photographic story. Original media remain intact and viewable. */
+:root {
+  --ocean: #0b2026; --graphite: #0b2026; --paper: #e8eeea; --bone: #dfe8e2;
+  --bg: #0b2026; --text: #edf1e9; --muted: #b3c5c4; --line: #b6c9c326;
+  --silver: #c6d4ce; --gutter: clamp(22px, 5.3vw, 88px); --radius: 100px; --image-radius: 0;
+  color-scheme: dark;
+}
+html { scroll-padding-top: 100px; }
+body { background: var(--ocean); }
+h1, h2, h3 { letter-spacing: -.055em; font-weight: 300; }
+h2 { font-size: clamp(42px, 5.2vw, 78px); line-height: 1.06; }
+em, .serif { font-family: Georgia, 'Times New Roman', serif; font-style: italic; font-weight: 400; letter-spacing: -.055em; }
+p { line-height: 1.8; }
+.section { padding-block: clamp(80px, 9vw, 150px); border: 0; }
+.eyebrow { font-size: 10px; letter-spacing: .19em; font-weight: 400; }
+.section-heading { gap: 80px; }
+.section-heading > p { font-size: 15px; max-width: 370px; }
+.button { border-radius: 100px; min-height: 54px; padding: 15px 25px; letter-spacing: .03em; text-transform: none; font-size: 12px; transition: background .3s, color .3s, transform .3s; }
+.button:hover { transform: translateY(-2px); }
+.button.primary { background: var(--text); color: var(--bg); border-color: var(--text); }
+.text-link { padding-block: 12px; font-size: 13px; border-bottom-color: #b6c9c34d; }
+.site-header { background: transparent; position: absolute; inset: 0 0 auto; color: #edf1e9; }
+.nav-wrap { min-height: 102px; border: 0; }
+.nav-links { gap: 32px; }
+.nav-links a { font-size: 10px; letter-spacing: .08em; }
+.nav-cta { min-height: 40px; padding: 10px 19px; font-size: 10px; }
+.wordmark { font-size: 23px; letter-spacing: -.05em; }
+.wordmark small { font-size: 6px; letter-spacing: .23em; }
+.menu-toggle { display: none; }
+body:has(.ocean-hero) .site-header { --muted: #566b6b; --line: #29494e40; color: #173b40; }
+body:has(.ocean-hero) .wordmark span { color: #526966; }
+.mobile-nav.open { background: #102b31; color: #edf1e9; border-radius: 0 0 28px 28px; }
+.ocean-hero { --bg: #e8eeea; --text: #19383e; --muted: #496368; --line: #29494e40; position: relative; min-height: 860px; min-height: max(820px, 100svh); overflow: clip; isolation: isolate; color: var(--text); background: linear-gradient(160deg, #f1f2eb 0%, #e8eeea 45%, #bfcecb 100%); }
+.hero-atmosphere { position: absolute; inset: 0; z-index: -1; background: radial-gradient(ellipse at 75% 45%, #fff7 0%, transparent 65%); }
+.hero-heading { position: relative; z-index: 2; padding-block: clamp(160px, 17vh, 220px) 170px; pointer-events: none; }
+.hero-heading > * { pointer-events: auto; }
+.hero-heading .eyebrow { margin-bottom: 30px; max-width: 360px; }
+.ocean-hero h1 { font-size: clamp(80px, 8.3vw, 132px); line-height: .97; max-width: 690px; }
+.ocean-hero h1 > * { display: block; }
+.ocean-hero h1 em { font-size: 1.03em; }
+.hero-description { max-width: 300px; font-size: 14px; margin-top: 34px; }
+.hero-heading .button { margin-top: 25px; background: #19383e; color: #f2f5ef; border-color: #19383e; }
+.hero-vessel { position: absolute; width: min(82%, 1520px); right: -4%; top: 27%; transform: translateY(var(--drift, 0px)); pointer-events: none; }
+.hero-vessel img { width: 100%; mix-blend-mode: multiply; mask-image: radial-gradient(ellipse 58% 66% at 54% 48%, #000 41%, #000b 63%, transparent 91%); }
+.hero-vessel { mix-blend-mode: multiply; }
+.hero-foot { position: absolute; z-index: 3; inset: auto 0 42px; display: flex; align-items: end; justify-content: space-between; gap: 28px; }
+.scroll-cue { display: flex; align-items: center; gap: 20px; font-size: 9px; letter-spacing: .15em; max-width: 300px; }
+.scroll-line { width: 1px; height: 49px; background: #35525970; }
+.vessel-caption { display: grid; grid-template-columns: auto auto; align-items: center; gap: 4px 25px; font-size: 10px; }
+.vessel-caption strong { font-size: 13px; font-weight: 400; letter-spacing: .1em; }
+.vessel-caption > span:nth-child(2) { grid-column: 1; color: #486264; }
+.vessel-caption > span:last-child { grid-column: 2; grid-row: 1 / 3; font-size: 27px; }
+.story-intro { padding-block: 150px 170px; background: linear-gradient(#bfcecb 0%, #799591 30%, #28484b 67%, #0b2026 100%); }
+.story-intro-grid { display: grid; grid-template-columns: 1.6fr .8fr; gap: 90px; align-items: end; }
+.story-intro h2 > * { display: block; }
+.scene-original { padding: 10px 0; border-bottom: 1px solid #b6c9c355; font-size: 10px; white-space: nowrap; }
+.story-intro .eyebrow { color: #e4ece6; padding-top: 12px; max-width: 200px; }
+.story-intro h2 { font-size: clamp(42px, 4.7vw, 70px); max-width: 900px; color: #f5f6ed; }
+.story-intro h2 em { color: #d0dfd5; }
+.story-intro p { max-width: 440px; color: #d5e1db; margin-top: 38px; font-size: 15px; }
+.dissolve-story { --dissolve: 0; height: 170svh; position: relative; background: #0b2026; }
+.dissolve-stage { position: sticky; top: 0; min-height: 740px; height: 100svh; overflow: clip; isolation: isolate; display: flex; align-items: center; }
+.dissolve-media { position: absolute; inset: 0; z-index: -3; mask-image: linear-gradient(transparent, #000 16%, #000 80%, transparent); }
+.scene-image { position: absolute; inset: 0; }
+.scene-image img { width: 100%; height: 100%; object-fit: cover; object-position: center 52%; }
+.scene-first { opacity: calc(1 - var(--dissolve)); }
+.scene-second { opacity: var(--dissolve); }
+.scene-shade { position: absolute; inset: 0; z-index: -2; background: linear-gradient(90deg, #071b23e6, #071b239c 30%, #071b2320 75%), linear-gradient(0deg, #0b2026 0%, transparent 27%, transparent 75%, #0b2026); }
+.scene-content { position: relative; padding-block: 100px; }
+.scene-content h2 { max-width: 750px; font-size: clamp(58px, 6.8vw, 100px); }
+.scene-content p { max-width: 360px; margin-block: 32px 22px; color: #d1dcd7; font-size: 15px; }
+.scene-foot { position: absolute; inset: auto 0 44px; display: flex; justify-content: space-between; align-items: center; gap: 35px; font-size: 9px; letter-spacing: .13em; color: #bccdcc; }
+.scene-count { display: flex; gap: 7px; }
+.scene-count i { width: 34px; height: 2px; background: #e6eee5; }
+.scene-count i:first-child { opacity: calc(1 - var(--dissolve) * .7); }
+.scene-count i:last-child { opacity: calc(.3 + var(--dissolve) * .7); }
+#vanuatu { padding-top: 60px; background: radial-gradient(ellipse at 10% 55%, #1e3b40, #0b2026 70%); }
+.case-grid { grid-template-columns: 1.25fr 1fr; gap: 70px; }
+.case-photo { margin-left: calc(-1 * var(--gutter)); }
+.case-photo > img { border-radius: 0; width: 100%; mask-image: radial-gradient(ellipse 72% 73% at 48% 50%, #000 32%, #000b 58%, transparent 88%); }
+.case-photo .play-button { left: 20%; bottom: 17%; width: 70px; height: 70px; border-color: #cfdbd582; background: #102c3270; backdrop-filter: blur(12px); }
+.case-photo .play-note { left: calc(20% + 82px); bottom: calc(17% + 19px); background: transparent; }
+.case-grid > div > .photo-caption { padding-left: 8%; font-size: 8px; }
+.case-text > p { font-size: 14px; }
+.case-points { gap: 24px 36px; }
+.case-points strong { font-size: 28px; }
+.case-points > div { border-top-color: #b6c9c324; }
+.case-text .actions { gap: 17px; }
+#projects.yacht-collection { --bg: #0b2026; --text: #edf1e9; --muted: #b3c5c4; --line: #b6c9c32c; background: linear-gradient(#0b2026, #17373d 44%, #0b2026); color: var(--text); color-scheme: dark; padding-bottom: 40px; }
+.yacht-collection > .container { width: 100%; max-width: none; }
+.yacht-collection .section-heading, .yacht-collection .collection-note { width: min(var(--wrap), calc(100% - var(--gutter) * 2)); margin-inline: auto; }
+.yacht-grid { display: block; }
+.yacht-card { position: relative; display: grid; grid-template-columns: 1.45fr 1fr; align-items: center; min-height: 560px; padding: 70px var(--gutter); border: 0; border-radius: 0; background: transparent; }
+.yacht-card:nth-child(even) { grid-template-columns: 1fr 1.45fr; }
+.yacht-card:nth-child(even) .yacht-card-image { grid-column: 2; grid-row: 1; }
+.yacht-card:nth-child(even) .yacht-card-body { grid-column: 1; grid-row: 1; padding-left: 3vw; padding-right: 4vw; }
+.yacht-card-image { background: transparent; margin-left: -5vw; }
+.yacht-card:nth-child(even) .yacht-card-image { margin-left: 0; margin-right: -4vw; }
+.yacht-card-image img { aspect-ratio: 1.75; object-fit: contain; border-radius: 0; mask-image: radial-gradient(ellipse 69% 71% at 50% 48%, #000 24%, #000c 51%, transparent 82%); }
+.yacht-card-image > span { position: static; display: block; margin: 12px 0 0 12%; padding: 0; border: 0; background: none; font-size: 8px; letter-spacing: .17em; color: #afc3c3; }
+.yacht-card-body { padding: 22px 0 22px 4vw; max-width: 560px; }
+.yacht-card .eyebrow { font-size: 9px; letter-spacing: .12em; margin-bottom: 16px; }
+.yacht-card h3 { font-size: clamp(56px, 6vw, 94px); font-weight: 300; margin-bottom: 25px; }
+.yacht-card-body > p { min-height: 0; font-size: 14px; max-width: 380px; }
+.yacht-card .collection-specs { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-block: 30px 16px; }
+.yacht-card .collection-specs dt { min-height: 32px; font-size: 9px; }
+.yacht-card .collection-specs dd { font-size: 23px; margin-top: 9px; }
+.yacht-card .collection-specs > div { padding-block: 14px; }
+.card-actions { justify-content: start; gap: 22px; }
+.card-actions .text-link { font-size: 11px; }
+.collection-note { font-size: 11px; color: #a3b8b9; }
+.engineering, .services, .partner-teaser, .project-process, .faq, .club, .contact, footer { --bg: #0b2026; --text: #edf1e9; --muted: #b3c5c4; --line: #b6c9c326; background: var(--bg); color: var(--text); }
+.engineering { background: radial-gradient(ellipse at 95% 40%, #254147, #0b2026 63%); }
+.engineering-image { padding-top: 80px; }
+.engineering-image img { border-radius: 0; mask-image: radial-gradient(ellipse 75% 72%, #000 30%, #000b 60%, transparent 84%); }
+.engineering-quote { font-family: Georgia, serif; font-style: italic; color: #d5dfd5; margin-top: 36px; }
+.step { padding-block: 19px; border-top-color: var(--line); }
+.step h4 { font-size: 16px; }
+.step p { font-size: 13px; }
+.engineering-title > p { font-size: 14px; }
+.services { padding-top: 30px; }
+.services-grid { gap: 40px; }
+.service { border-color: var(--line); padding-top: 24px; }
+.service h3 { font-size: 26px; }
+.service p { font-size: 13px; }
+.number { margin-bottom: 32px; }
+.partner-teaser { position: relative; overflow: clip; padding-block: 180px; isolation: isolate; }
+.partner-teaser-grid { display: block; min-height: 530px; }
+.partner-teaser-grid > div { position: relative; z-index: 2; padding-top: 80px; max-width: 600px; }
+.partner-teaser h2 { font-size: clamp(46px, 5.5vw, 82px); }
+.partner-teaser p { max-width: 410px; font-size: 14px; color: #d2ddda; }
+.partner-teaser .shipyard-visual { position: absolute; inset: 0; z-index: -2; }
+.partner-teaser .shipyard-visual .image-expand { height: 100%; }
+.partner-teaser .shipyard-visual img { width: 100%; height: 100%; object-fit: cover; mask-image: linear-gradient(transparent, #000 25%, #000 65%, transparent); opacity: .62; }
+.partner-teaser::after { content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(90deg, #0b2026f5, #0b202680 47%, #0b202620), linear-gradient(0deg, #0b2026, transparent 35%, transparent 60%, #0b2026); }
+.partner-teaser .shipyard-visual figcaption { position: absolute; bottom: 120px; right: var(--gutter); font-size: 8px; color: #c3d0cd; }
+.partner-teaser .image-expand::after { right: var(--gutter); bottom: 155px; }
+.process-grid { gap: 60px; }
+.process-grid li { border-color: var(--line); }
+.process-grid h3 { font-size: 28px; }
+.process-grid p { font-size: 14px; }
+.club { padding-top: 50px; }
+.club-grid { border: 0; padding-top: 0; }
+.club h2 { font-family: Georgia, serif; font-style: italic; line-height: 1.12; }
+.club-mark { color: #b1c4c0; font-size: 68px; }
+.club .club-note { font-size: 11px; opacity: .8; }
+.faq-list summary { font-size: 16px; }
+.contact { background: radial-gradient(ellipse at 15% 55%, #1d4247, #0b2026 70%); }
+.contact-heading { border: 0; padding-bottom: 25px; }
+.contact-heading h2 { font-size: clamp(52px, 6.5vw, 96px); }
+.contact-grid { margin-top: 45px; gap: 100px; }
+.form-panel { padding: 0; }
+.field input, .field select, .field textarea { background: #fff3; background: #ffffff04; border: 0; border-bottom: 1px solid #7b949569; border-radius: 0; padding-inline: 0; }
+.field [aria-invalid=true] { border-bottom-color: #f3b8ab; }
+.field input:focus, .field textarea:focus, .field select:focus { outline: 1px solid #c9dad399; outline-offset: 6px; }
+.form-note { font-size: 11px; }
+footer { border: 0; padding-top: 40px; }
+.footer-top { border-color: var(--line); }
+.footer-note { color: #a7bbbb; }
+.image-expand, .image-expand > img { border-radius: 0; }
+.image-expand::after { border-radius: 50%; background: #12383d80; backdrop-filter: blur(10px); }
+dialog, .close-dialog, .gallery-controls button { border-radius: 18px; }
+.close-dialog, .gallery-controls button { border-radius: 50%; }
+.detail-section, .partner-hero, .legal-copy { padding-top: 155px; }
+.detail-heading { margin-block: 65px 30px; }
+.detail-heading h1 { font-size: clamp(80px, 10vw, 160px); }
+.detail-intro { max-width: 500px; }
+.detail-intro p { font-size: 15px; }
+.detail-main-img { width: 100%; min-height: 0; max-height: 750px; aspect-ratio: 2; object-fit: contain; background: none; border-radius: 0; mask-image: radial-gradient(ellipse 70% 72%, #000 27%, #000c 55%, transparent 85%); }
+.detail-dossier { background: transparent; border: 0; padding: 0; margin-top: 90px; }
+.detail-asset { border-radius: 0; }
+.detail-layout { margin-top: 70px; }
+.detail-caption { color: var(--muted); }
+.source-note { font-size: 12px; color: var(--muted); background: transparent; border-color: var(--line); }
+.partner-hero h1 { font-size: clamp(50px, 6.5vw, 96px); }
+.partner-panorama img { border-radius: 0; background: none; mask-image: radial-gradient(ellipse 78% 75%, #000 30%, #000c 58%, transparent 86%); }
+.partner-basis, .partnership-options, .partner-next { --bg: #0b2026; --text: #edf1e9; --muted: #b3c5c4; --line: #b6c9c326; background: var(--bg); color: var(--text); }
+.partner-basis { background: radial-gradient(ellipse at 20% 45%, #1d3c42, #0b2026 70%); }
+.evidence-grid article { border-color: var(--line); }
+.project-status { background: #c4d6d00a; border-color: #a2c3b866; border-radius: 0 18px 18px 0; }
+.reveal-ready { opacity: 0; transform: translateY(28px); transition: opacity 950ms ease, transform 1100ms cubic-bezier(.2,.7,.2,1); }
+.reveal-ready.is-visible, .reveal-ready:focus-within { opacity: 1; transform: none; }
+@media (min-width: 1600px) { .hero-vessel { top: 23%; width: 82%; } .hero-heading { padding-top: 200px; } }
+@media (max-width: 1200px) {
+  .hero-vessel { top: 34%; width: 86%; right: -13%; }
+  .ocean-hero h1 { font-size: 100px; }
+  .hero-description { max-width: 260px; }
+  .case-grid { gap: 40px; }
+  .contact-grid { gap: 60px; }
+  .yacht-card { grid-template-columns: 1.15fr 1fr; }
+  .yacht-card:nth-child(even) { grid-template-columns: 1fr 1.15fr; }
+}
+@media (max-width: 900px) {
+  .menu-toggle { display: grid; }
+  .nav-wrap { min-height: 86px; }
+  .ocean-hero { min-height: 900px; }
+  .hero-heading { padding-top: 150px; padding-bottom: 450px; }
+  .ocean-hero h1 { font-size: clamp(72px, 11vw, 100px); max-width: 700px; }
+  .hero-description { max-width: 350px; font-size: 14px; }
+  .hero-vessel { top: auto; bottom: 100px; right: -7%; width: 104%; }
+  .hero-foot { bottom: 35px; }
+  .story-intro { padding-block: 115px 130px; }
+  .story-intro-grid { grid-template-columns: 1fr; gap: 20px; }
+  .story-intro .eyebrow { max-width: none; }
+  .story-intro h2 { max-width: 700px; }
+  .scene-content h2 { font-size: clamp(50px, 8vw, 76px); }
+  .case-grid { grid-template-columns: 1fr; gap: 40px; }
+  .case-photo { margin-right: calc(-1 * var(--gutter)); }
+  .case-photo > img { max-height: 600px; object-fit: contain; }
+  .case-text { max-width: 680px; }
+  .case-points { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .yacht-card, .yacht-card:nth-child(even) { grid-template-columns: 1.2fr 1fr; padding-inline: 30px; }
+  .yacht-card-body, .yacht-card:nth-child(even) .yacht-card-body { padding-inline: 20px; }
+  .yacht-card h3 { font-size: 53px; }
+  .yacht-card .collection-specs { gap: 12px; }
+  .yacht-card .collection-specs dd { font-size: 20px; }
+  .card-actions { gap: 6px; }
+  .engineering-image { padding-top: 0; max-width: 700px; }
+  .partner-teaser { padding-block: 80px; }
+  .partner-teaser .shipyard-visual figcaption { bottom: 65px; }
+  .partner-teaser .image-expand::after { bottom: 100px; }
+  .contact-grid { gap: 40px; }
+}
+@media (max-width: 600px) {
+  :root { --gutter: 24px; }
+  h2 { font-size: clamp(38px, 9.7vw, 52px); }
+  .section { padding-block: 80px; }
+  .nav-wrap { min-height: 83px; }
+  .wordmark { font-size: 21px; }
+  .wordmark small { font-size: 5px; }
+  .nav-right { gap: 12px; }
+  .ocean-hero { min-height: 850px; min-height: max(820px, 105svh); }
+  .hero-heading { padding-top: 145px; padding-bottom: 420px; }
+  .hero-heading .eyebrow { font-size: 8px; letter-spacing: .15em; margin-bottom: 25px; }
+  .ocean-hero h1 { font-size: clamp(66px, 17vw, 94px); max-width: 100%; line-height: .99; }
+  html[lang=ru] .ocean-hero h1 { font-size: clamp(53px, 13.7vw, 82px); }
+  .hero-description { font-size: 13px; max-width: 290px; margin-top: 26px; }
+  .hero-heading .button { min-height: 48px; padding-inline: 22px; margin-top: 22px; font-size: 11px; }
+  .hero-vessel { width: 127%; right: -13%; bottom: 106px; }
+  .hero-foot { inset-block-end: 34px; align-items: end; gap: 30px; }
+  .scroll-cue { font-size: 8px; letter-spacing: .06em; max-width: 140px; gap: 13px; }
+  .vessel-caption { font-size: 8px; gap: 6px 14px; }
+  .vessel-caption strong { font-size: 10px; }
+  .story-intro { padding-block: 100px 105px; }
+  .story-intro-grid { gap: 16px; }
+  .story-intro h2 { font-size: clamp(39px, 10vw, 53px); }
+  .story-intro p { font-size: 14px; margin-top: 28px; }
+  .dissolve-story { height: 155svh; }
+  .dissolve-stage { min-height: 680px; }
+  .scene-content { padding-block: 90px; }
+  .scene-content h2 { font-size: clamp(46px, 12vw, 66px); }
+  html[lang=ru] .scene-content h2 { font-size: clamp(35px, 9.1vw, 53px); }
+  .scene-content p { font-size: 14px; max-width: 285px; }
+  .scene-shade { background: linear-gradient(90deg, #071b23d9, #071b2360), linear-gradient(0deg, #0b2026 0%, transparent 35%, transparent 65%, #0b2026); }
+  .scene-image img { object-position: 57% center; }
+  .scene-foot { font-size: 7px; bottom: 40px; gap: 25px; }
+  .scene-foot > span:first-child { max-width: 240px; }
+  .scene-count i { width: 20px; }
+  #vanuatu { padding-top: 40px; }
+  .case-points { grid-template-columns: 1fr 1fr; }
+  .case-photo .play-button { width: 50px; height: 50px; }
+  .case-photo .play-note { left: calc(20% + 57px); bottom: calc(17% + 7px); font-size: 9px; }
+  .section-heading { gap: 24px; margin-bottom: 28px; }
+  .section-heading > p { font-size: 14px; }
+  .yacht-card, .yacht-card:nth-child(even) { display: flex; flex-direction: column; align-items: stretch; padding: 30px var(--gutter) 55px; min-height: 0; }
+  .yacht-card-image, .yacht-card:nth-child(even) .yacht-card-image { margin-inline: -24px; }
+  .yacht-card-image img { aspect-ratio: 1.5; }
+  .yacht-card-image > span { margin-left: 24px; font-size: 7px; margin-top: 0; }
+  .yacht-card-body, .yacht-card:nth-child(even) .yacht-card-body { padding: 30px 0 0; }
+  .yacht-card h3 { font-size: 64px; margin-bottom: 20px; }
+  .yacht-card .collection-specs { margin-block: 24px 8px; gap: 18px; }
+  .yacht-card .collection-specs dt { font-size: 9px; min-height: 30px; }
+  .card-actions { flex-direction: row; gap: 12px 24px; }
+  .card-actions .text-link { padding-block: 12px; font-size: 10px; }
+  .engineering-image img { min-height: 230px; object-fit: contain; }
+  .engineering-quote { font-size: 29px; }
+  .services { padding-top: 20px; }
+  .services-grid { grid-template-columns: 1fr; gap: 24px; }
+  .service { display: grid; grid-template-columns: 24px 1fr; gap: 0 20px; }
+  .service .number { grid-row: 1 / 4; }
+  .service h3 { margin-bottom: 14px; }
+  .service p { margin-bottom: 16px; }
+  .partner-teaser { padding-block: 80px 110px; }
+  .partner-teaser-grid { min-height: 570px; }
+  .partner-teaser-grid > div { padding-top: 40px; }
+  .partner-teaser h2 { font-size: 49px; }
+  html[lang=ru] .partner-teaser h2 { font-size: 43px; }
+  .partner-teaser p { max-width: 325px; }
+  .partner-teaser .shipyard-visual img { object-position: 57% center; }
+  .partner-teaser .shipyard-visual figcaption { max-width: 210px; font-size: 7px; bottom: 75px; left: var(--gutter); }
+  .process-grid { gap: 35px; }
+  .process-grid h3 { font-size: 27px; }
+  .club { padding-top: 25px; }
+  .club h2, html[lang=ru] .club h2 { font-size: 37px; }
+  .club-mark { font-size: 54px; }
+  .contact-grid { grid-template-columns: 1fr; gap: 60px; }
+  .contact-heading h2, html[lang=ru] .contact-heading h2 { font-size: clamp(43px, 10.4vw, 58px); }
+  .contact-heading { padding-bottom: 0; }
+  .contact-mail { font-size: 25px; }
+  .detail-section, .partner-hero, .legal-copy { padding-top: 125px; }
+  .detail-heading { margin-top: 45px; }
+  .detail-heading h1 { font-size: 72px; }
+  .detail-main-img { aspect-ratio: 1.3; }
+  .detail-layout { margin-top: 45px; }
+  .detail-dossier { margin-top: 55px; }
+  .partner-hero h1 { font-size: 49px; }
+  .gallery-stage { padding: 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .reveal-ready { opacity: 1; transform: none; }
+  .hero-vessel { transform: none; }
+  .dissolve-story { height: auto; }
+  .dissolve-stage { position: relative; min-height: 780px; height: auto; }
+  .scene-first { opacity: 1; }
+  .scene-second { opacity: 0; }
+}
+@media print {
+  .reveal-ready { opacity: 1; transform: none; }
+  .dissolve-story { height: auto; }
+  .dissolve-stage { position: relative; height: auto; min-height: 600px; }
+}
+/* Fade every image edge to avoid a visible rectangular source boundary. */
+.hero-vessel img, .yacht-card-image img, .detail-main-img, .engineering-image img, .case-photo > img {
+  mask-image: linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent), linear-gradient(transparent, #000 16%, #000 76%, transparent);
+  mask-composite: intersect;
+}
+@media (max-width: 600px) {
+  .ocean-hero { min-height: max(800px, 100svh); }
+  .hero-heading { padding-bottom: 370px; }
+  .scene-foot { gap: 12px; }
+  .scene-original { font-size: 8px; }
+}
+.contact-info { min-width: 0; }
+@media (max-width: 600px) {
+  .contact-grid { grid-template-columns: minmax(0, 1fr); }
+  .contact-mail { font-size: clamp(20px, 6vw, 25px); overflow-wrap: anywhere; }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .yacht-card-image { margin-left: -30px; }
+  .yacht-card:nth-child(even) .yacht-card-image { margin-right: -30px; }
+}
+@media (min-width: 901px) {
+  .yacht-card-image { margin-left: calc(-1 * var(--gutter)); }
+  .yacht-card:nth-child(even) .yacht-card-image { margin-left: 0; margin-right: calc(-1 * var(--gutter)); }
+}
+@media (max-width: 600px) {
+  .detail-heading { grid-template-columns: minmax(0, 1fr); }
+  .detail-heading h1 { font-size: clamp(46px, 13vw, 72px); }
+}
+/* The collection emerges into daylight, then returns to the darker workshop. */
+#projects.yacht-collection {
+  --text: #17383d; --muted: #466267; --line: #385b5e32;
+  color: var(--text); color-scheme: light;
+  padding-top: 320px; padding-bottom: 280px;
+  background: linear-gradient(#0b2026 0, #c7d7d2 320px, #dce5de calc(100% - 280px), #0b2026 100%);
+}
+.yacht-card-image img { aspect-ratio: auto; height: auto; mix-blend-mode: multiply; }
+.yacht-card-image { mix-blend-mode: multiply; }
+.yacht-card-image > span, .yacht-collection .collection-note { color: #466267; }
+.yacht-collection .text-link { border-color: #385b5e55; }
+.yacht-collection .text-link:hover { color: #17383d; }
+@media (max-width: 600px) {
+  #projects.yacht-collection { padding-top: 240px; padding-bottom: 230px; background: linear-gradient(#0b2026, #c7d7d2 240px, #dce5de calc(100% - 230px), #0b2026); }
+}
+#panel-vanuatu .yacht-card-image img { mask-image: radial-gradient(ellipse 56% 57% at 50% 51%, #000 32%, #000c 60%, transparent 92%); }
+@media (max-width: 600px) {
+  .yacht-card h3 { font-size: clamp(52px, 16vw, 64px); }
+  html[lang=ru] .club h2 { font-size: clamp(29px, 7.5vw, 37px); }
+}

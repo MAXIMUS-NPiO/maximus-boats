@@ -1,6 +1,6 @@
 /** Progressive enhancement: original, unmodified source images in a native dialog. */
 export function initGallery() {
-    const candidates = [...document.querySelectorAll('.collection-image img, .detail-main-img, .detail-asset, .interior-grid img, .engineering-image > img, .shipyard-visual > img')];
+    const candidates = [...document.querySelectorAll('.collection-image img, .detail-main-img, .detail-asset, .interior-grid img, .scene-image img, .engineering-image > img, .shipyard-visual > img')];
     if (!candidates.length) return;
     const ru = document.documentElement.lang === 'ru';
     const label = ru ? 'Просмотр изображения' : 'Image viewer';
@@ -25,14 +25,19 @@ export function initGallery() {
     };
     const step = delta => { index = (index + delta + group.length) % group.length; render(); };
     candidates.forEach(source => {
-        const button = document.createElement('button');
-        button.type = 'button';
-        button.className = 'image-expand';
-        button.setAttribute('aria-label', `${ru ? 'Открыть изображение' : 'View image'}: ${source.alt}`);
+        const scene = source.closest('.scene-image');
+        const button = scene ? document.querySelector(`[data-gallery-source="${source.id}"]`) : document.createElement('button');
+        if (!button) return;
+        if (!scene) {
+            button.type = 'button';
+            button.className = 'image-expand';
+            button.setAttribute('aria-label', `${ru ? 'Открыть изображение' : 'View image'}: ${source.alt}`);
+            source.before(button);
+            button.append(source);
+        }
         button.setAttribute('aria-haspopup', 'dialog');
-        source.before(button);
-        button.append(source);
-        button.addEventListener('click', () => {
+        button.addEventListener('click', event => {
+            event.preventDefault();
             const section = source.closest('section');
             group = candidates.filter(candidate => candidate.closest('section') === section);
             index = group.indexOf(source);

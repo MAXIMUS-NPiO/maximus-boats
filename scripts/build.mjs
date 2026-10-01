@@ -42,8 +42,8 @@ export async function build() {
             routes.push(path);
             return doc;
         };
-        let home = await part('hero') + collection(models, locale);
-        for (const name of ['shipyard', 'vanuatu', 'services', 'engineering', 'interiors', 'process', 'club', 'questions', 'contact'])
+        let home = await part('hero-flow') + await part('story') + await part('interiors-flow') + await part('vanuatu') + collection(models, locale);
+        for (const name of ['engineering', 'services', 'shipyard', 'process', 'club', 'questions', 'contact'])
             home += await part(name);
         const homeDoc = await output(`/${locale}/`, locale === 'ru' ? 'Яхты на заказ и партнёрство в судостроении' : 'Custom yachts & shipyard partnerships', home);
         if (locale === 'en')

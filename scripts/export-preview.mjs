@@ -18,7 +18,7 @@ for (const name of await readdir(join(root, 'public/media'))) {
     const content = await readFile(join(root, 'public/media', name));
     assets['/media/' + name] = `data:${name.endsWith('.mp4') ? 'video/mp4' : 'image/webp'};base64,${content.toString('base64')}`;
 }
-const modules = ['shared/inquiry.js', 'src/client/modules/navigation.js', 'src/client/modules/tabs.js', 'src/client/modules/dialogs.js', 'src/client/modules/enquiry.js', 'src/client/modules/gallery.js', 'src/client/main.js'];
+const modules = ['shared/inquiry.js', 'src/client/modules/navigation.js', 'src/client/modules/tabs.js', 'src/client/modules/dialogs.js', 'src/client/modules/enquiry.js', 'src/client/modules/gallery.js', 'src/client/modules/atmosphere.js', 'src/client/main.js'];
 const client = (await Promise.all(modules.map(file => readFile(join(root, file), 'utf8')))).map(text => text.replace(/^import .+?;\s*/gm, '').replace(/\bexport /g, '')).join('\n');
 const encode = data => JSON.stringify(data).replace(/</g, '\\u003c');
 const code = `

@@ -12,7 +12,7 @@ def document(locale):
     html=re.sub(r'<script type="module" src="[^"]+"></script>','',html)
     for p in (ROOT/'public/media').iterdir():
         html=html.replace('/media/'+p.name,'data:'+mimetypes.guess_type(p.name)[0]+';base64,'+base64.b64encode(p.read_bytes()).decode())
-    paths=['shared/inquiry.js','src/client/modules/navigation.js','src/client/modules/tabs.js','src/client/modules/dialogs.js','src/client/modules/enquiry.js','src/client/main.js']
+    paths=['shared/inquiry.js','src/client/modules/navigation.js','src/client/modules/tabs.js','src/client/modules/dialogs.js','src/client/modules/enquiry.js','src/client/modules/gallery.js','src/client/modules/atmosphere.js','src/client/main.js']
     js='\n'.join(re.sub(r'^import .+?;\s*','',(ROOT/x).read_text(),flags=re.M).replace('export ','') for x in paths)
     return html.replace('</body>','<script type="module">'+js+'</script></body>')
 def main():
